@@ -26,4 +26,5 @@ Let's code the model in TensorFlow keras:
 Finally, we are ready with the model that can be trained for a simple text classification problem. We can add a lot of things to increase the complexity of the model. 
 But the main focus of this blog was to be able to use a CNN for text classifications.
 
+
 **Keep Learning, Keep Sharing 😊.**
