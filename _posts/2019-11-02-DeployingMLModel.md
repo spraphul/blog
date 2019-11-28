@@ -14,7 +14,7 @@ While the trend in machine learning has grown so much nowadays, most of the data
 To install Django on your machine, simply type the following commands:
 
 
-**$ pip install django** <br \>
+**$ pip install django** <br />
 **$ pip install djangorestframework**
 
 Now, we will create a project in django. Let us say we want to deploy a text classification model.
@@ -29,7 +29,7 @@ Now, we will create a project in django. Let us say we want to deploy a text cla
 
 Now, we will have to create a django app. Let us name it as LstmClassifier.
 
-**$ cd TextClassifier** <br \>
+**$ cd TextClassifier** <br />
 **$ python manage.py startapp LstmClassifier**
 
 Now, we need to configure the settings.py file in TextClassifier by adding the rest_framework and the LstmClassifier app in the INSTALLED_APPS list.
@@ -58,7 +58,7 @@ Now, we will have to add the required function to do the job which our endpoint 
 
 By migrating, we enable the changes made to our model into the database. This can be done as follows:
 
-**$ python manage.py makemigrations**<br \>
+**$ python manage.py makemigrations**<br />
 **$ python manage.py migrate**
 
 The above functions can be taken similar to that of
@@ -75,7 +75,7 @@ Open any browser and type localhost followed by the port number on which the ser
 
 You should be getting a json output like this:
 
-**'Class_Predicted' : 'two'**<br \>
+**'Class_Predicted' : 'two'**<br />
 **'Probabilty' : '0.963'**
 
 Finally, we have created a web app for our model. There is a tensorflow serving API also which does the same job and is 
