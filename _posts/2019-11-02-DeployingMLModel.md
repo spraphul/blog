@@ -58,7 +58,7 @@ Now, we will have to add the required function to do the job which our endpoint 
 
 By migrating, we enable the changes made to our model into the database. This can be done as follows:
 
-**$ python manage.py makemigrations**<br />
+**$ python manage.py makemigrations** <br />
 **$ python manage.py migrate**
 
 The above functions can be taken similar to that of
@@ -75,7 +75,7 @@ Open any browser and type localhost followed by the port number on which the ser
 
 You should be getting a json output like this:
 
-**'Class_Predicted' : 'two'**<br />
+**'Class_Predicted' : 'two'** <br />
 **'Probabilty' : '0.963'**
 
 Finally, we have created a web app for our model. There is a tensorflow serving API also which does the same job and is 
