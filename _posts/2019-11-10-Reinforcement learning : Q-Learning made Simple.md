@@ -1,4 +1,6 @@
 ---
-title: Small text
+title: Reinforcement learning : Q-Learning made Simple
 ---
-This is an example of a blog post with small amount of text.
+Recently, I started studying Reinforcement Learning and was fascinated by the potential it possesses. In this blog, we will have a quick discussion over the terms, Q-Learning and OpenAI gym library. Finally, we will be implementing a simple Q-Learning application on one of the gym environments.
+
+![RL](https://i1.wp.com/enhancedatascience.com/wp-content/uploads/2017/07/reinforcementLearning.png?fit=437%2C450)
