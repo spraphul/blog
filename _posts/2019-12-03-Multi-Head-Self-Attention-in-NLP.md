@@ -23,3 +23,7 @@ When the Query and Key and Value, all are generated from the same input sequence
 
 ### Multi-Head Self Attention
 
+We have been breaking into the concept word by word so far and the only new term here is **Multi-Head** now. So this is nothing but doing the same thing discussed earlier by different heads(brains 😀). The aim here is to combine the knowledge explored by multiple heads or agents instead of doing it by one as in the traditional case. Mathematically, it relates to attending to not only the different words of the sentence but different segments of the words too. So, the words vectors are divided into a fixed number(h, number of heads) of chunks and then self-attention is applied on the corresponding chunks resulting in **h** context vector for each word. The final context vector is obtained by concatinating all those **h** context vectors.
+
+
+
