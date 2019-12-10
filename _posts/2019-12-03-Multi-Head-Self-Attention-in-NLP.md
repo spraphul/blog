@@ -16,7 +16,7 @@ We know that attention is a mechanism to find the words of importance for a give
 
 So, **X** is the input word sequence and we calculate three values from that which is **Q(Query)**, **K(Key)** and **V(Value)**. So the task is to find the important words from the Keys for the Query word. This is done by passing the query and key to a mathematical function(usually matrix multiplication followed by softmax). The resulting context vector for **Q** is the multiplication of the probability vector obtained by the softmax with the **Value**. 
 
-So in Self Attention, The Query and Key and Value, all are generated from the same input sequence X, thus its name contains **Self** word. 
+When the Query and Key and Value, all are generated from the same input sequence X, it is called **Self Attention**. 
 
 ![self](https://uploads-ssl.webflow.com/5d97a4cbfecfcd70873a37d1/5daa9f120d705b66e57ee953_aiayn%20self%20attention%20mechanism%20-%20umaneo-FR.svg)
 
