@@ -1,5 +1,5 @@
 ---
-title : DockerNetes : Bringing Docker and Kubernetes together
+title : DockerNetes &#58; Bringing Docker and Kubernetes together 😬
 ---
 
 To be Published...
