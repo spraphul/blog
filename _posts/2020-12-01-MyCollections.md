@@ -12,10 +12,7 @@ title : Talks by the Greats
         verticalEnabled: false
     });
 </script>
-
-
-
-
+<>br/<br/>
 
 
 #### How to Know (Celeste Kidd)
