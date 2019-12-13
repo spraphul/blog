@@ -9,6 +9,9 @@ title : Talks by the Greats
     embed = new SlidesLiveEmbed('presentation-embed-38921750', {
         presentationId: '38921750',
         autoPlay: false, // change to true to autoplay the embedded presentation
-        verticalEnabled: true
+        verticalEnabled: False
     });
 </script>
+
+
+
