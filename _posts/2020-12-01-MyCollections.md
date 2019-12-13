@@ -14,4 +14,13 @@ title : Talks by the Greats
 </script>
 
 
-
+#### How to Knoe (Celeste Kidd)
+<div id="presentation-embed-38921495"></div>
+<script src='https://slideslive.com/embed_presentation.js'></script>
+<script>
+    embed = new SlidesLiveEmbed('presentation-embed-38921495', {
+        presentationId: '38921495',
+        autoPlay: false, // change to true to autoplay the embedded presentation
+        verticalEnabled: false
+    });
+</script>
