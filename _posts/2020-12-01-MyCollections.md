@@ -25,3 +25,16 @@ title : Talks by the Greats
         verticalEnabled: false
     });
 </script>
+
+<br/><br/><br/>
+
+#### Reinforcement Learning: Past, Present, and Future Perspectives (Katja Hofmann)
+<div id="presentation-embed-38921493"></div>
+<script src='https://slideslive.com/embed_presentation.js'></script>
+<script>
+    embed = new SlidesLiveEmbed('presentation-embed-38921493', {
+        presentationId: '38921493',
+        autoPlay: false, // change to true to autoplay the embedded presentation
+        verticalEnabled: false
+    });
+</script>
