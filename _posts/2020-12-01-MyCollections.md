@@ -2,6 +2,7 @@
 title : Talks by the Greats
 ---
 
+#### From System 1 Deep Learning to System 2 Deep Learning (Yoshua Bengio)
 <div id="presentation-embed-38921750"></div>
 <script src='https://slideslive.com/embed_presentation.js'></script>
 <script>
