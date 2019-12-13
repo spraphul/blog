@@ -14,7 +14,11 @@ title : Talks by the Greats
 </script>
 
 
-#### How to Knoe (Celeste Kidd)
+
+
+
+
+#### How to Know (Celeste Kidd)
 <div id="presentation-embed-38921495"></div>
 <script src='https://slideslive.com/embed_presentation.js'></script>
 <script>
