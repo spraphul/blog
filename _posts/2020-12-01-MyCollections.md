@@ -38,7 +38,7 @@ title : Talks by the Greats
         verticalEnabled: false
     });
 </script>
-
+<br/><br/><br/>
 
 #### Applications : Computer Vision
 <div id="presentation-embed-38917639"></div>
