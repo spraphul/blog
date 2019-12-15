@@ -38,3 +38,15 @@ title : Talks by the Greats
         verticalEnabled: false
     });
 </script>
+
+
+#### Applications : Computer Vision
+<div id="presentation-embed-38917639"></div>
+<script src='https://slideslive.com/embed_presentation.js'></script>
+<script>
+    embed = new SlidesLiveEmbed('presentation-embed-38917639', {
+        presentationId: '38917639',
+        autoPlay: false, // change to true to autoplay the embedded presentation
+        verticalEnabled: false
+    });
+</script>
