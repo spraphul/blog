@@ -30,7 +30,21 @@ So MDN is nothing but a neural network predicting the statistical parameters ins
 #### Long Short Term Memory Networks
 ![skn](https://www.researchgate.net/profile/Ron_Hoory/publication/267154161/figure/download/fig2/AS:614220395737088@1523452962264/LSTM-gate-with-peephole-connections-showing-the-internal-structure-and-relation-between.png)
 
-As it is not a new thing, i may expect some new people. So I will give a basic idea about LSTMs here. So, LSTMs are nothing but a special kind of neural network having three gates, input, foget and output gates respectively. The most important thing in a LSTM cell is its memory C shown in the figure above.
+While it is not a new thing, I may expect some new people. So I will give a basic idea about LSTMs here. So, LSTMs are nothing but a special kind of neural network having three gates, input, foget and output gates respectively. The most important thing in a LSTM cell is its memory C shown in the figure above.
+
+**Forget Gate:** A LSTM cell will output the hidden state and the memory of its cell which fed to the cell next to it. A forget gate decides the amount of the information from the previous memory to be passed into the current cell. It basically takes the previous output and current input and outputs a forget probability.
+
+
+**Input Gate:** It takes the same inputs as the forget gate and outputs a probability which decides the amount of information of the cell state which contributes to its memory.
+
+**Output Gate:** It again takes the same inputs as above and gives a probability which predicts a probability to decide the amount of information to be passes to its next cell.
+
+LSTMs are quite good at handling sequential inputs like texts, time-series datasets or stroke datasets discussed earlier and give a robust feature vector for a sample data sequence. Alex Graves thus proposes to use them for the handwritten strokes to find a feature vector for a stroke sequence which is then fed to a MDN network to find the statistical parameters as shown in the figure below:
+
+![sdj](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSeMnFwFRfMNTSxP4gaEML7zf0yHCgKKmKr4nRCbwaQ91Txq3kO)
+
+
+I hope we are now good to get into the implementation part. I will use Keras to create the network and Tensorflow at its backend to define the loss function.
 
 
 
