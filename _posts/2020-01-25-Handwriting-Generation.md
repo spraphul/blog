@@ -12,7 +12,19 @@ Before moving into the implementation part, I would like to discuss about a spec
 
 ![nkdsj](https://media2.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
 
-Okay fine, we are going to get into more details. 
+Okay fine, we are going to get into more details.
+
+Let us take an example shown in the figure below:
+
+![dkjsk](https://1.bp.blogspot.com/-42_9dzRFUmU/Xi6YDF_CQlI/AAAAAAAAQis/5_w4hOE-qmAWyU2cJrpgb8SvOzDhGPEHgCLcBGAsYHQ/s1600/Screenshot%2B2020-01-27%2Bat%2B1.27.03%2BPM.png)
+
+In the first figure, given the Θ1 and Θ2, when asked about predicting the position of robotic arm, we have a unique solution. Now, look at the second figure, the problem has been reversed. Given the x1 and x2, when asked about predicting the Θ parameters, we get two solutions. In most of the cases, we get a problem like the first figure where the data distribution can be assumed to come from a single gaussian distribution. While for the case like the second figure, if we use the conventional neural networks, it does not go down well with the performance. I will tell you why, shortly.
+
+
+
+
+
+
 
 
 
