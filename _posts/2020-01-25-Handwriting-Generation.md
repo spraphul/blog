@@ -75,14 +75,14 @@ from tensorflow.keras.models import Model
 # nout = 1 eos + 2 mixture weights + 2*2 means \
 # + 2*2 variances + 2 correlations for bivariates
 
-def build_model(ninp=3, nmix=2, nout=13):
+def build_model(ninp=3, nmix=2):
     inp = Input(shape=(None, ninp), dtype='float32')
     l,h,c = LSTM(400, return_sequences=True, \
     return_state=True)(inp)
     l1 ,_,_= LSTM(400, return_sequences=True, \
     return_state=True)(l, initial_state=[h,c])
     
-    output = keras.layers.Dense(13)(l1)
+    output = keras.layers.Dense(nmix*6 + 1)(l1)
     model = Model(inp,output)
     
     return model
@@ -91,5 +91,54 @@ def build_model(ninp=3, nmix=2, nout=13):
 
 #### Loss Function
 
+```python
+def seqloss():
+    def pdf(x1, x2, mu1, mu2, s1, s2,rho):
+        norm1 = tf.subtract(x1, mu1)
+        norm2 = tf.subtract(x2, mu2)
+        s1s2 = tf.multiply(s1, s2)
+        z = tf.square(tf.div(norm1, s1)) + \
+            tf.square(tf.div(norm2, s2)) - \
+            2 * tf.div(tf.multiply(rho, tf.multiply(norm1, norm2)), s1s2)
+        negRho = 1 - tf.square(rho)
+        result = tf.exp(tf.div(-z, 2 * negRho))
+        denom = 2 * np.pi * tf.multiply(s1s2, tf.sqrt(negRho))
+        result = tf.div(result, denom)
+        return result
+        
+    def loss(y_true, pred):
+    
+        prob = K.sigmoid(pred[0][:,0]); pi = K.softmax(pred[0][:,1:3])
+        
+        x = y_true[0][:,1]; y = y_true[0][:,2]; penlifts = y_true[0][:,0]
+        
+        m11 = K.sigmoid(pred[0][:,3]); m12 = K.sigmoid(pred[0][:,4])
+        s11= K.exp(pred[0][:,5]); s12 = K.exp(pred[0][:,6])
+        rho1 = K.tanh(pred[0][:,7])
+        pdf1 = tf.maximum(tf.multiply(pdf(x, y, m11, m12, s11, s12, rho1),pi[:,0]), K.epsilon())
+        
+        for i in range(1,2):
+            m11 = K.sigmoid(pred[0][:,3+5*i]); m12 = K.sigmoid(pred[0][:,4+5*i])
+            s11 = K.exp(pred[0][:,5+5*i]); s12 = K.exp(pred[0][:,6+5*i])
+            rho1 = K.tanh(pred[0][:,7+5*i])
+            pdf1 += tf.maximum(tf.multiply(pdf(x, y, m11, m12, s11, s12, rho1),pi[:,i]), K.epsilon())
 
+        
+        loss1 = tf.math.reduce_sum(-tf.log(pdf1))
+        pos = tf.multiply(prob, penlifts)
+        neg = tf.multiply(1-prob, 1-penlifts)
+        loss2 = tf.math.reduce_mean(-tf.log(pos+neg))
+        final_loss = loss1+loss2
+        
+        return final_loss
 
+    return loss
+```
+
+I trained the model for 2 epochs on a small dataset of strokes stochastically because the lengths of strokes were varying. The results I got looks like the one shown below:
+
+![sdjk](https://1.bp.blogspot.com/-cMyEoTD3eRc/Xi60ck0k5HI/AAAAAAAAQjE/ziQZUDb8_cQUuSPB67rZJl5fiOPUZ8y_QCLcBGAsYHQ/s1600/unconditional2.png)
+
+I suppose if you increase the number of mixtures and dataset and epochs collectively or individually, you will get better results. I hope the blog was an enjoyable read and please reach out to me if you have any doubts or suggestions.
+
+**Keep Learning, Keep Sharing**
