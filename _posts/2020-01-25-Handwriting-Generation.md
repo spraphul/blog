@@ -46,7 +46,30 @@ LSTMs are quite good at handling sequential inputs like texts, time-series datas
 
 I hope we are now good to get into the implementation part. I will use Keras to create the network and Tensorflow at its backend to define the loss function.
 
+It is assumed that the x and y point offsets follow mixture of bivariate normal distributions and the penlifts follow a bernoulli distribution(obvious, right?). I will demostrate the solution using a mixture of 2 bivariate normal distributions and bernoulli distribution can be parametrized by a single probability value, right? 
 
+Oh! I forgot to tell you about the loss function. It is defined by the equation given below:
+
+![wskdk](https://1.bp.blogspot.com/-lojawOMZYVk/Xi6sZ5ewj9I/AAAAAAAAQi4/IhkcFJBnmrwchxcPa0NiZLj1FWVwiOIHgCLcBGAsYHQ/s1600/Screenshot%2B2020-01-27%2Bat%2B2.54.14%2BPM.png)
+
+where π is the probability of mixture components and e is the probability of the end of stroke which parametrizes the bernoulli distribution.
+
+Now let us do the task we are hired for 😮....🤫....😃 Code Code Code:
+
+#### Model
+```python
+import numpy as np
+import numpy
+import tensorflow as tf
+import tensorflow.keras as keras
+import tensorflow.keras.backend as K
+from tensorflow.keras.models import Model
+
+
+
+
+
+```
 
 
 
