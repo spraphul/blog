@@ -56,20 +56,40 @@ where π is the probability of mixture components and e is the probability of th
 
 Now let us do the task we are hired for 😮....🤫....😃 Code Code Code:
 
-#### Model
+The input will be a sequence of 3 length vectors and output of each point is the next point in the stroke sequence like shown in the figure below:
+
+![wsld](https://image.slidesharecdn.com/rnnerica-180423124525/95/rnn-and-its-applications-31-638.jpg?cb=1524487703)
+
+
+#### Model(LSTM + MDN)
 ```python
 import numpy as np
 import numpy
 import tensorflow as tf
 import tensorflow.keras as keras
 import tensorflow.keras.backend as K
+import keras.layers.Input as Input
+import keras.layers.LSTM as LSTM
 from tensorflow.keras.models import Model
 
+# nout = 1 eos + 2 mixture weights + 2*2 means \
+# + 2*2 variances + 2 correlations for bivariates
 
-
-
-
+def build_model(ninp=3, nmix=2, nout=13):
+    inp = Input(shape=(None, ninp), dtype='float32')
+    l,h,c = LSTM(400, return_sequences=True, \
+    return_state=True)(inp)
+    l1 ,_,_= LSTM(400, return_sequences=True, \
+    return_state=True)(l, initial_state=[h,c])
+    
+    output = keras.layers.Dense(13)(l1)
+    model = Model(inp,output)
+    
+    return model
 ```
+
+
+#### Loss Function
 
 
 
