@@ -20,6 +20,10 @@ Let us take an example shown in the figure below:
 
 In the first figure, given the Θ1 and Θ2, when asked about predicting the position of robotic arm, we have a unique solution. Now, look at the second figure, the problem has been reversed. Given the x1 and x2, when asked about predicting the Θ parameters, we get two solutions. In most of the cases, we get a problem like the first figure where the data distribution can be assumed to come from a single gaussian distribution. While for the case like the second figure, if we use the conventional neural networks, it does not go down well with the performance. I will tell you why, shortly.
 
+It is not that neural networks having mean squared losses or cross entropy losses do not consider the (mixture of distributions) thing. It considers that thing, but gives a resulting distribution which is the mean of all those mixtures and this [paper](https://publications.aston.ac.uk/id/eprint/373/1/NCRG_94_004.pdf) suggests that we do not need the mean and instead the most probable mixture component to model the statistical parameters. And thus **MDN** comes into picture.
+
+##### How does it look like?
+
 
 
 
