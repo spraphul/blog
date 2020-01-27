@@ -24,13 +24,15 @@ It is not that neural networks having mean squared losses or cross entropy losse
 
 ##### How does it look like?
 
+So MDN is nothing but a neural network predicting the statistical parameters instead the probabilities for the classes or values for a regression problem. Let us assume the data to be a mixture of **M** normal distributions, so the final prediction will be **M** probabilities weights for the mixtures, **M** mean values and **M** variances. And while sampling we take the parameters of the most probable mixture component. We will talk more about the structure and implementations later.
+
+
+#### Long Short Term Memory Networks
+![skn](https://www.researchgate.net/profile/Ron_Hoory/publication/267154161/figure/download/fig2/AS:614220395737088@1523452962264/LSTM-gate-with-peephole-connections-showing-the-internal-structure-and-relation-between.png)
+
+As it is not a new thing, i may expect some new people. So I will give a basic idea about LSTMs here. So, LSTMs are nothing but a special kind of neural network having three gates, input, foget and output gates respectively. The most important thing in a LSTM cell is its memory C shown in the figure above.
 
 
 
 
 
-
-
-
-
-![slkd](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQyD1d8mt2DJV2gTX877-Oo4JtdbAmePYhLEyxnaaQS9YvIaAk0)
