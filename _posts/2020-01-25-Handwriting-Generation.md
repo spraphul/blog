@@ -2,7 +2,7 @@
 title : Generating Handwritten Sequences Using LSTMs and Mixed Density Networks
 ---
 
-As everyone comes up with a resolution at the start of the year, I would be trying to be more infrequent in my blog postings😀. As it has been over a month, I thought of spilling some words here 😀. In this blog, we will be discussing about an interesting paper on handwriting synthesis proposed by Alex Graves(DeepMind). I will also be implementing the paper using Tensorflow and Keras. 
+As everyone comes up with a resolution at the start of the year, I would be trying to be more infrequent in my blog postings😀. As it has been over a month, I thought of spilling some words here 😀. In this blog, we will be discussing about an interesting paper on [Generating Sequences With Recurrent Neural Networks](https://arxiv.org/abs/1308.0850) proposed by Alex Graves(DeepMind). I will also be implementing the paper using Tensorflow and Keras. 
 
 #### Problem Definition 
 The dataset here is in the form of mathematical representation of handwritten strokes. So a point in the stroke sequence is a vector of length=3. First value is a binary digit denoting whether the pen lifts in the air at the point or not. Second value is the offset of the x coodinate relative to the previous x-value in the sequence and similarly the third value is the offset in the y coordinate. The problem is, given the dataset, we need a model which can generate handwritten strokes unconditionally(randomly by giving a seed value, just like GANs).
