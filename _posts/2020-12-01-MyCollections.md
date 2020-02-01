@@ -1,5 +1,5 @@
 ---
-title : Talks by the Greats
+title : Courses You Should Take 
 ---
 
 
