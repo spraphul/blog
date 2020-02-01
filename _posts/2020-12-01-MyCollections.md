@@ -3,56 +3,25 @@ title : Talks by the Greats
 ---
 
 
-#### MIT Deep Learning Course
+#### MIT Deep Learning Course 2020
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuv1FSpHurUdv82YxWZMVTt0YjEI-dAGr" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br/><br/><br/>
 
-#### From System 1 Deep Learning to System 2 Deep Learning (Yoshua Bengio)
-<div id="presentation-embed-38921750"></div>
-<script src='https://slideslive.com/embed_presentation.js'></script>
-<script>
-    embed = new SlidesLiveEmbed('presentation-embed-38921750', {
-        presentationId: '38921750',
-        autoPlay: false, // change to true to autoplay the embedded presentation
-        verticalEnabled: false
-    });
-</script>
+#### MIT Deep Learning Course 2019
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br/><br/><br/>
 
-#### How to Know (Celeste Kidd)
-<div id="presentation-embed-38921495"></div>
-<script src='https://slideslive.com/embed_presentation.js'></script>
-<script>
-    embed = new SlidesLiveEmbed('presentation-embed-38921495', {
-        presentationId: '38921495',
-        autoPlay: false, // change to true to autoplay the embedded presentation
-        verticalEnabled: false
-    });
-</script>
+#### DeepMind's Advanced Deep Learning and Reinforcement Learning
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br/><br/><br/>
 
-#### Reinforcement Learning: Past, Present, and Future Perspectives (Katja Hofmann)
-<div id="presentation-embed-38921493"></div>
-<script src='https://slideslive.com/embed_presentation.js'></script>
-<script>
-    embed = new SlidesLiveEmbed('presentation-embed-38921493', {
-        presentationId: '38921493',
-        autoPlay: false, // change to true to autoplay the embedded presentation
-        verticalEnabled: false
-    });
-</script>
+#### Nvidia's Webinars on Deep Learning Frameworks
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL5B692fm6--tI-ijknnVZWbXU2H4JpSYe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <br/><br/><br/>
 
-#### Applications : Computer Vision
-<div id="presentation-embed-38917639"></div>
-<script src='https://slideslive.com/embed_presentation.js'></script>
-<script>
-    embed = new SlidesLiveEmbed('presentation-embed-38917639', {
-        presentationId: '38917639',
-        autoPlay: false, // change to true to autoplay the embedded presentation
-        verticalEnabled: false
-    });
-</script>
+#### Deep Learning at Oxford
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
