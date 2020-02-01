@@ -2,12 +2,6 @@
 title : Courses You Should Take 
 ---
 
-
-#### MIT Deep Learning Course 2020
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuv1FSpHurUdv82YxWZMVTt0YjEI-dAGr" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br/><br/><br/>
-
 #### MIT Deep Learning Course 2019
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
