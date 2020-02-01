@@ -2,6 +2,12 @@
 title : Talks by the Greats
 ---
 
+
+#### MIT Deep Learning Course
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuv1FSpHurUdv82YxWZMVTt0YjEI-dAGr" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 #### From System 1 Deep Learning to System 2 Deep Learning (Yoshua Bengio)
 <div id="presentation-embed-38921750"></div>
 <script src='https://slideslive.com/embed_presentation.js'></script>
