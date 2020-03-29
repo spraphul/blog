@@ -5,7 +5,7 @@ title : Being into Quarantine
 When the entire world was shaken by the terror of a pandemic, I got an obvious notification from the 
 CEO of my company stating the mandatory policy of working from home. Now for a guy like me, who just 
 does not know how to work from home, it was a soul shattering news. I was worried more about the gym 
-and the ideas of inadvertantly bulking my body started to haunt me. To support the claim, the entire 
+and the ideas of inadvertently bulking my body started to haunt me. To support the claim, the entire 
 country was locked down to prevent the spread of the virus. For the first two days, it seemed like a 
 pleasing vacation season and I was busy completing my uncompleted stuffs on the Netflix. But after 
 that, I just wanted nothing but to figure out a reason to be on the Earth itself. I started feeling 
@@ -18,7 +18,7 @@ Few of the things which struck my head were to start reading some books, syncing
 buddies over video calls, reading some new research papers, spending more time with my family
 (again with the video calls), etc. So, in the due sections, I will be drawing some insights from 
 my experiences of the past few days. The books I chose were, "THE COURAGE TO BE DISLIKED" BY Ichiro 
-Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AND PERSEVARANCE".
+Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AND PERSEVERANCE".
 
 ![ehj](https://d3525k1ryd2155.cloudfront.net/h/385/148/1238148385.0.m.jpg)
 
