@@ -20,7 +20,8 @@ buddies over video calls, reading some new research papers, spending more time w
 my experiences of the past few days. The books I chose were, "THE COURAGE TO BE DISLIKED" BY Ichiro 
 Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AND PERSEVARANCE".
 
-![ehj](https://i2.wp.com/www.evelynmarinoff.com/wp-content/uploads/2019/06/courage-to-be-disliked.png?fit=1200%2C628)
+![ehj](https://d3525k1ryd2155.cloudfront.net/h/385/148/1238148385.0.m.jpg)  
+![ejhj](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457889762i/27213329._UY400_SS400_.jpg)
 
 In the first book, I came across an interesting way of looking at the world. So basically it is based 
 on a psychology which tries to explain the subjective nature of human's thought process. So basically, 
@@ -33,7 +34,6 @@ distinguishes it from inferiority complex which is a when a person starts using 
 improving itself and then finally falls in a extreme state called superioriy complex. One should definitely be 
 reading this book.
 
-![ejhj](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457889762i/27213329._UY400_SS400_.jpg)
 
 In the latter one, Angela Duckworth, a psychologist explains how a "strived" person ultimately wins the 
 final race over the "talented" one. It explains the importance of perseverance and grit in the process of 
@@ -41,7 +41,6 @@ accomplishing a goal by giving very beautiful examples. It also explains that wh
 or undertand the process of a person who accomplishes something big, we term the magic behind as the person's 
 talent. I am still into the book and I loved the way it is drafted.
 
-!
 
 I synced up with two of my close friends and while one discussed the trade offs between the skills and 
 passion of a person and how can we move from one quadrant to the other for the sake of self-improvement, 
