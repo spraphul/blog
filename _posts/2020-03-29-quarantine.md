@@ -62,7 +62,7 @@ ways. I am able to put my thoughts more clearly now, which were previously diffi
 of the tiring schedule.
 
 From the climate perspective, the air seems fresher than before. The nature is balancing itself. 
-Pollution level has reduced. People are cooperating by socially distancing themselved instead of clashing with each other in the name of religions. World is unified. 
+Pollution level has reduced. People are cooperating by socially distancing themselves instead of clashing with each other in the name of religions. World is unified. 
  
 ![skj](https://www.gannett-cdn.com/presto/2020/03/13/USAT/2e79fc5f-d2ad-4a62-8d02-e23bfd0b7600-RectThumb_SocialDistancing.png)
 
