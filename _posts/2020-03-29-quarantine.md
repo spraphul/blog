@@ -25,8 +25,8 @@ Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AN
 ![ejhj](https://i.pinimg.com/originals/72/ca/d4/72cad4c66afbefc20d6f126d7a3aec37.jpg)
 
 In the first book, I came across an interesting way of looking at the world. So basically it is based 
-on a psychology which tries to explain the subjective nature of human's thought process. So basically, 
-the nature of the world depends on the how you subjectify it. The real world is pretty simple and we 
+on a psychology which tries to explain the subjective nature of human's thought process. 
+The nature of the world depends on the how you subjectify it. The real world is pretty simple and we 
 try to make it more complicated by looking at it in different ways. It also describes that anyone in 
 the world can change and that depends on the courage of the person to leave its present state. A strong
 claim made in this book is that every problem which a person has is some kind of interpersonal relationship 
