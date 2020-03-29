@@ -26,7 +26,7 @@ Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AN
 
 In the first book, I came across an interesting way of looking at the world. So basically it is based 
 on a psychology which tries to explain the subjective nature of human's thought process. 
-The nature of the world depends on the how you subjectify it. The real world is pretty simple and we 
+The nature of the world depends on how you subjectify it. The real world is pretty simple and we 
 try to make it more complicated by looking at it in different ways. It also describes that anyone in 
 the world can change and that depends on the courage of the person to leave its present state. A strong
 claim made in this book is that every problem which a person has is some kind of interpersonal relationship 
@@ -66,7 +66,7 @@ Pollution level has reduced. People are cooperating by socially distancing thems
  
 ![skj](https://www.gannett-cdn.com/presto/2020/03/13/USAT/2e79fc5f-d2ad-4a62-8d02-e23bfd0b7600-RectThumb_SocialDistancing.png)
 
-It is, without a doubt a very difficult time for the human race. While being in qurantine is absolutely needed and difficult for some, if we use the time doing the things we loved and did not have time to look at them lately and managing our schedule
+It is, without a doubt a very difficult time for the human race. While being in quarantine is absolutely needed and difficult for some, if we use the time doing the things we loved and did not have time to look at them lately and managing our schedule
 smartly, we can end up being happy and productive despite not being in the usual zone.
 
 ## Stay Distant, Stay Clean, Stay Safe
