@@ -20,7 +20,7 @@ buddies over video calls, reading some new research papers, spending more time w
 my experiences of the past few days. The books I chose were, "THE COURAGE TO BE DISLIKED" BY Ichiro 
 Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AND PERSEVARANCE".
 
-![ehj](https://d3525k1ryd2155.cloudfront.net/h/385/148/1238148385.0.m.jpg)  
+![ehj](https://d3525k1ryd2155.cloudfront.net/h/385/148/1238148385.0.m.jpg) |
 ![ejhj](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457889762i/27213329._UY400_SS400_.jpg)
 
 In the first book, I came across an interesting way of looking at the world. So basically it is based 
