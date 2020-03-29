@@ -47,7 +47,8 @@ passion of a person and how can we move from one quadrant to the other for the s
 the other one talked about the current pandemic and the steps taken and the steps that should be taken in 
 order to control the situation.
 
-![dekj](https://i1.wp.com/www.queercents.com/wordpress/wp-content/uploads/2007/04/gridcombo.gif) | ![ahj](https://sm.mashable.com/t/mashable_in/photo/default/from-quarantine-to-test-kits-wheres-india-at-with-coronaviru_vfhg.h720.jpg)
+![dekj](https://i1.wp.com/www.queercents.com/wordpress/wp-content/uploads/2007/04/gridcombo.gif) | 
+![ahj](https://i.ytimg.com/vi/fXrPvld4q-0/maxresdefault.jpg)
 
 I am able to spend some more time with my parents. My mom is giving me some delicious cooking lessons 
 and I am enjoying the homely food despite being far from them(though I miss them badly). 
