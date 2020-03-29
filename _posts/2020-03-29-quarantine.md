@@ -12,11 +12,15 @@ that, I just wanted nothing but to figure out a reason to be on the Earth itself
 like a futile creature yawning all the day. Fortunately, I figured out the situation and thought of 
 doing something which I was not getting time for before. 
 
+![sknj](https://media.graytvinc.com/images/810*607/coronavirus14.jpg)
+
 Few of the things which struck my head were to start reading some books, syncing up with my old 
 buddies over video calls, reading some new research papers, spending more time with my family
 (again with the video calls), etc. So, in the due sections, I will be drawing some insights from 
 my experiences of the past few days. The books I chose were, "THE COURAGE TO BE DISLIKED" BY Ichiro 
 Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AND PERSEVARANCE".
+
+![ehj](https://kbimages1-a.akamaihd.net/0f12b84f-69a1-49f8-95e9-9f8ac230e738/1200/1200/False/the-courage-to-be-disliked.jpg)
 
 In the first book, I came across an interesting way of looking at the world. So basically it is based 
 on a psychology which tries to explain the subjective nature of human's thought process. So basically, 
@@ -29,30 +33,39 @@ distinguishes it from inferiority complex which is a when a person starts using 
 improving itself and then finally falls in a extreme state called superioriy complex. One should definitely be 
 reading this book.
 
+![ejhj](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457889762i/27213329._UY400_SS400_.jpg)
+
 In the latter one, Angela Duckworth, a psychologist explains how a "strived" person ultimately wins the 
 final race over the "talented" one. It explains the importance of perseverance and grit in the process of 
 accomplishing a goal by giving very beautiful examples. It also explains that whenever we can not explain 
 or undertand the process of a person who accomplishes something big, we term the magic behind as the person's 
 talent. I am still into the book and I loved the way it is drafted.
 
+!
 
 I synced up with two of my close friends and while one discussed the trade offs between the skills and 
 passion of a person and how can we move from one quadrant to the other for the sake of self-improvement, 
 the other one talked about the current pandemic and the steps taken and the steps that should be taken in 
 order to control the situation.
 
+![dekj](https://i1.wp.com/www.queercents.com/wordpress/wp-content/uploads/2007/04/gridcombo.gif) ![ahj](https://www.mygov.in/sites/all/themes/mygov/images/covid/covid-19-banner.jpg)
 
 I am able to spend some more time with my parents. My mom is giving me some delicious cooking lessons 
 and I am enjoying the homely food despite being far from them(though I miss them badly). 
+
+![skl](https://www.psychologies.co.uk/sites/default/files/styles/psy2_page_header/public/wp-content/uploads/2013/04/family.gif)
 
 Being at home all the day is slowly turing out to be more productive and turing its face from the mundane 
 ways. I am able to put my thoughts more clearly now, which were previously difficult to be expressed because 
 of the tiring schedule.
 
 From the climate perspective, the air seems fresher than before. The nature is balancing itself. 
-Pollution level has reduced. People are cooperating instead of clashing with each other in the name of religions. 
-World is unified. 
+Pollution level has reduced. People are cooperating by socially distancing themselved instead of clashing with each other in the name of religions. World is unified. 
+
+![sjkn](https://www.wewishes.com/wp-content/uploads/2019/09/wed.jpg) ![skj](https://www.gannett-cdn.com/presto/2020/03/13/USAT/2e79fc5f-d2ad-4a62-8d02-e23bfd0b7600-RectThumb_SocialDistancing.png)
 
 It is, without a doubt a very difficult time for the human race. While being in qurantine is absolutely needed but 
 if we use the time doing the things we loved and did not have time to look at them lately and managing our schedule
 smartly, we can end up being happy and productive despite not being in the usual zone.
+
+## Stay Distant, Stay Clean, Stay Safe
