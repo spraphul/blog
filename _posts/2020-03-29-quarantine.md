@@ -32,14 +32,14 @@ the world can change and that depends on the courage of the person to leave its 
 claim made in this book is that every problem which a person has is some kind of interpersonal relationship 
 problem. It beautifully explains how a sense of inferiority can be used to improve oneself and it also 
 distinguishes it from inferiority complex which is a when a person starts using some kind of excuse to avoid 
-improving itself and then finally falls in a extreme state called superioriy complex. One should definitely be 
+improving itself and then finally falls in a extreme state called superiority complex. One should definitely be 
 reading this book.
 
 
 In the latter one, Angela Duckworth, a psychologist explains how a "strived" person ultimately wins the 
 final race over the "talented" one. It explains the importance of perseverance and grit in the process of 
-accomplishing a goal by giving very beautiful examples. It also explains that whenever we can not explain 
-or undertand the process of a person who accomplishes something big, we term the magic behind as the person's 
+accomplishing a goal by giving very beautiful examples. It also explains that whenever, we are unable to explain 
+or undertand the process of a person who accomplishes something big, we term the magic behind that as the person's 
 talent. I am still into the book and I loved the way it is drafted.
 
 
@@ -66,8 +66,7 @@ Pollution level has reduced. People are cooperating by socially distancing thems
  
 ![skj](https://www.gannett-cdn.com/presto/2020/03/13/USAT/2e79fc5f-d2ad-4a62-8d02-e23bfd0b7600-RectThumb_SocialDistancing.png)
 
-It is, without a doubt a very difficult time for the human race. While being in qurantine is absolutely needed but 
-if we use the time doing the things we loved and did not have time to look at them lately and managing our schedule
+It is, without a doubt a very difficult time for the human race. While being in qurantine is absolutely needed and difficult for some, if we use the time doing the things we loved and did not have time to look at them lately and managing our schedule
 smartly, we can end up being happy and productive despite not being in the usual zone.
 
 ## Stay Distant, Stay Clean, Stay Safe
