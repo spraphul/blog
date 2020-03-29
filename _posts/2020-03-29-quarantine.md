@@ -21,7 +21,7 @@ my experiences of the past few days. The books I chose were, "THE COURAGE TO BE 
 Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AND PERSEVARANCE".
 
 ![ehj](https://d3525k1ryd2155.cloudfront.net/h/385/148/1238148385.0.m.jpg) |
-![ejhj](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457889762i/27213329._UY400_SS400_.jpg)
+![ejhj](https://i.pinimg.com/originals/72/ca/d4/72cad4c66afbefc20d6f126d7a3aec37.jpg)
 
 In the first book, I came across an interesting way of looking at the world. So basically it is based 
 on a psychology which tries to explain the subjective nature of human's thought process. So basically, 
