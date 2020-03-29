@@ -20,7 +20,7 @@ buddies over video calls, reading some new research papers, spending more time w
 my experiences of the past few days. The books I chose were, "THE COURAGE TO BE DISLIKED" BY Ichiro 
 Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AND PERSEVARANCE".
 
-![ehj](https://kbimages1-a.akamaihd.net/0f12b84f-69a1-49f8-95e9-9f8ac230e738/1200/1200/False/the-courage-to-be-disliked.jpg)
+![ehj](https://i2.wp.com/www.evelynmarinoff.com/wp-content/uploads/2019/06/courage-to-be-disliked.png?fit=1200%2C628)
 
 In the first book, I came across an interesting way of looking at the world. So basically it is based 
 on a psychology which tries to explain the subjective nature of human's thought process. So basically, 
