@@ -20,7 +20,8 @@ buddies over video calls, reading some new research papers, spending more time w
 my experiences of the past few days. The books I chose were, "THE COURAGE TO BE DISLIKED" BY Ichiro 
 Kishimi and Fumitake Koga, and Angela Duckworth's "GRIT, THE POWER OF PASSION AND PERSEVARANCE".
 
-![ehj](https://d3525k1ryd2155.cloudfront.net/h/385/148/1238148385.0.m.jpg) |
+![ehj](https://d3525k1ryd2155.cloudfront.net/h/385/148/1238148385.0.m.jpg)
+
 ![ejhj](https://i.pinimg.com/originals/72/ca/d4/72cad4c66afbefc20d6f126d7a3aec37.jpg)
 
 In the first book, I came across an interesting way of looking at the world. So basically it is based 
@@ -47,7 +48,8 @@ passion of a person and how can we move from one quadrant to the other for the s
 the other one talked about the current pandemic and the steps taken and the steps that should be taken in 
 order to control the situation.
 
-![dekj](https://i1.wp.com/www.queercents.com/wordpress/wp-content/uploads/2007/04/gridcombo.gif) | 
+![dekj](https://i1.wp.com/www.queercents.com/wordpress/wp-content/uploads/2007/04/gridcombo.gif)
+
 ![ahj](https://i.ytimg.com/vi/fXrPvld4q-0/maxresdefault.jpg)
 
 I am able to spend some more time with my parents. My mom is giving me some delicious cooking lessons 
