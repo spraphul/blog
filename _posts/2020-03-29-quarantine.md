@@ -63,8 +63,8 @@ of the tiring schedule.
 
 From the climate perspective, the air seems fresher than before. The nature is balancing itself. 
 Pollution level has reduced. People are cooperating by socially distancing themselved instead of clashing with each other in the name of religions. World is unified. 
-
-![sjkn](https://www.wewishes.com/wp-content/uploads/2019/09/wed.jpg) ![skj](https://www.gannett-cdn.com/presto/2020/03/13/USAT/2e79fc5f-d2ad-4a62-8d02-e23bfd0b7600-RectThumb_SocialDistancing.png)
+ 
+![skj](https://www.gannett-cdn.com/presto/2020/03/13/USAT/2e79fc5f-d2ad-4a62-8d02-e23bfd0b7600-RectThumb_SocialDistancing.png)
 
 It is, without a doubt a very difficult time for the human race. While being in qurantine is absolutely needed but 
 if we use the time doing the things we loved and did not have time to look at them lately and managing our schedule
