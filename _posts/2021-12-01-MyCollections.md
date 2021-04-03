@@ -1,6 +1,10 @@
 ---
 title : Courses You Should Take 
 ---
+#### CS230 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PySo_6S4ZAg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br/><br/><br/>
 
 #### MIT Deep Learning Course 2019
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
