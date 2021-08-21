@@ -1,6 +1,8 @@
 ---
-A Confession
+title: A Confession
 ---
+
+![fdj](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdFj5jxxPCnpPN9QqkcUIV1V9lh4pDVr2WA&usqp=CAU)
 
 My life has always been messy, full of pressure, expectations, disapppointments etc. I was dealing with them(got accustomed). Then you came, awkwardly through a tinder match. I was not expecting a reply as you literally seemed out of reach. I tried, you replied and we talked. You also seemed to be a mess, an exquisite artist, an overflowing jar of talent with her own life policies. I liked it, wanted to know more about you. We talked the entire night, you were innocent telling every piece of your story with utter cuteness, I kept listening. I wanted to hear you bad, you whispered slightly over that phone call and that was the moment I fell for you. You also seemed interested as you told you care and it will increase eventually. You kept sending your arts, I kept being amazed. Slowly I started having the courage to express myself too. The only special thing I could do at that time was to sing for you. The recordings were raw, with no filter, no music and you liked them. You liked the calmness in the voice. The like started getting converted into love. I expressed it many a times but jokingly. I was living my dream. 
 
