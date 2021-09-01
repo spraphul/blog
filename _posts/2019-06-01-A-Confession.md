@@ -31,6 +31,8 @@ If I am shown the door outside your heart, this will be the last section of the 
 
 Being with me is painful for you, Being away from you is painful for me. So Gem!, Smile 😊.. I choose my pain. No announcements this time. Can someone end a moment in the manner it started. Wish someone could sing it for me. Never mind, here we go..
 
+![Listen](img/AnyConv.com__New Recording 31.mp4)
+
 Kuch is tarah, meri palkein 
 Teri palkon se mila de 
 Aasoon tere saare, meri palkon pe saja de
