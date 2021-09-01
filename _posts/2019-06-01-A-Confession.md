@@ -27,8 +27,16 @@ Yes, I am not perfect in the sense you dream someone to be. Not even close, perh
 If I am shown the door outside your heart, this will be the last section of the confession series. If the door can not be opened, more sections will be added further 😃(your not so fav).
 
 
+----------------------- 3 -------------------------
 
+Being with me is painful for you, Being away from you is painful for me. So Gem!, Smile 😊.. I choose my pain. No announcements this time. Can someone end a moment in the manner it started. Wish someone could sing it for me. Never mind, here we go..
 
+Kuch is tarah, meri palkein 
+Teri palkon se mila de 
+Aasoon tere saare, meri palkon pe saja de
+
+Shit that hurts! Stay happy and remember, I always keep my promise. So, whenever you need me, I will be there.
+Adios!
 
 Your's truly,
 An Unknown
