@@ -4,16 +4,9 @@ title : Three Years in Kanpur
 
 ![3yk1](https://nomadlist.com/assets/img/cities/kanpur-india-1000px.jpg)
 
-Hey guys, It's Praphul. Are you a Kanpurite? If Yes, I wanted you to catch the page. I remained a student of class XI and XII from C.B.S.E board
-in Kanpur. I also prepared there for IIT JEE in Kakadeo. Those three years gave me a collection of some precious memories. 
-The memories which perhaps can never be regained. The friends, the teachers, the hostels and the city(What a life it was!). 
-Here, I found what life really means. I learned here to live practically and in true words, I am not gonna let them fly away 
-from my life. The second reason for this long blog is to make the students of Kanpur realize what one needs to do when there
-is a dream to fulfill and how it feels when things do not happen to your expectations. And buddy! Kanpur is not like KOTA. 
-It has a different style. You will struggle a lot if you are an outsider and has no one to guide you. I was an outsider, I 
-had no one to guide, and I struggled too. I hope the story ahead helps. So, finally wasting no more lines and dedicating those
-to my parents, my brother, my teachers, and my friends Deepak, Dhanraj, Dilip, Gaurav(Puri), Utkarsh, Sajal, Kushagra, 
-Manish Bhaiya, Krishna Bhaiya, Dharmveer and many more, here we go:
+Hello everyone, my name is Praphul. If you're from Kanpur, then I'd like to grab your attention for a moment. During my time in Kanpur as a student of class XI and XII in the CBSE board, I also prepared for the IIT JEE in Kakadeo. These three years were incredibly special to me and filled with precious memories of the friends, teachers, hostels, and the city itself. Kanpur taught me what life really means and how to live practically. I cherish these memories and will always hold onto them.
+
+The purpose of this blog is two-fold. Firstly, I want to share my experience with the students of Kanpur and help them realize what it takes to achieve their dreams. I also want to shed light on the challenges one may face when coming to Kanpur as an outsider with no guidance. I was once in that position and struggled immensely. Kanpur has a different style and is not like Kota. Secondly, I would like to express my gratitude to my parents, brother, teachers, and friends, including Deepak, Dhanraj, Dilip, Gaurav (Puri), Utkarsh, Sajal, Kushagra, Manish Bhaiya, Krishna Bhaiya, Dharmveer, and many more who have played a significant role in my life. Let's begin without wasting any more time.
 
 
 ### First Step In The City
@@ -21,7 +14,7 @@ Manish Bhaiya, Krishna Bhaiya, Dharmveer and many more, here we go:
 It was 15th of May 2012 when after saying a bitter goodbye to my family who was in a small town Nichlaul, I left for Kanpur
 all alone with nothing in my hand but a bag having some clothes piled inside and of course an ATM card too. I arrived at
 Kanpur Central(CNB) at 11 in the night. I took an auto and reached Rawatpur Crossing where my friend Alok Mishra received 
-me and then we walked off to his hostel. In the way, I saw a large shining building with brightening posters on it and then 
+me and then we walked off to his hostel. On the way, I saw a large shining building with brightening posters on it and then 
 came to know that it was Rave Moti, a shopping mall and that was the first time I got introduced to that kind of world. In 
 fact, it was the first time I entered a hostel room whose owner was so weird that I couldn't handle him too far. Mishra Ji 
 was from Nichlaul too and was there to prepare for the FAMOUS IIT JEE. I was really very confused about where to take 
