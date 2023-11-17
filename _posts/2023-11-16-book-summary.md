@@ -65,7 +65,7 @@ Now performing an extracive summarization typically involves the following steps
 - Pick the top k chunks and represent them in the order they appear in the original document
 
 #### Clustering Based Approach
-![crank]([https://d3i71xaburhd42.cloudfront.net/321ca3ef3c40aea8f708819a8073c64957e3fb13/2-Figure1-1.png](https://github.com/spraphul/blog/blob/gh-pages/_posts/2-Figure1-1.png?raw=true))
+![crank](https://d3i71xaburhd42.cloudfront.net/321ca3ef3c40aea8f708819a8073c64957e3fb13/2-Figure1-1.png](https://github.com/spraphul/blog/blob/gh-pages/_posts/2-Figure1-1.png?raw=true))
 - Create chunks of the original document
 - Compute vector representations for those chunks
 - Perform a clustering operation for the chunk vectors and find K centroids
