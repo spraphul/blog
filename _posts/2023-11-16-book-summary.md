@@ -111,3 +111,18 @@ On the other hand, extractive summarization has its own set of limitations. The 
 
 Let's see how we can do this.
 
+![combine](https://github.com/spraphul/blog/blob/gh-pages/_posts/combine.png?raw=true)
+
+While the diagram above should be self explanatory, let me go through the steps:
+- We first split the book chapterwise
+- Then extractive summaries for each chapter is generated
+- Then, we generate abstractive summaries from each of the extractive summaries in the previous step
+- At last we are left with a condensed form of the book and can levarage the recursive approach which minimises the information loss and generate the final summary of the book.
+
+## Conclusion
+By leveraging extractive summarization to distill key information efficiently and employing recursive techniques to maintain context and coherence, a hybrid approach can strike a balance between comprehensiveness and efficiency. As technology continues to evolve, refining these methods and exploring innovative strategies will undoubtedly enhance our ability to distill the essence of lengthy texts, making the world of information more accessible and manageable.
+
+## References
+- https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
+- https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf
+- https://arxiv.org/pdf/1906.04165.pdf
