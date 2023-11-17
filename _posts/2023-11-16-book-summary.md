@@ -17,14 +17,17 @@ I will be using Llama-2 prompt for this and the process majorly depends upon the
 
 ```python
 PROMPT_TEMPLATE = """[INST] <<SYS>>
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
+Below is an instruction that describes a task.
+Write a response that appropriately completes the request.
 <</SYS>>
 You are given a summary of the book before the current page as follows: 
 {previous_sum}
 The current page content is as follows:
 {current_page}.
-Now, generate a combined summary such that it contains the key information from previous summary and current page combined.
-If the previous summary is empty, consider the current page as the first page of the book.  [/INST] """
+Now, generate a combined summary such that it contains the
+key information from previous summary and current page combined.
+If the previous summary is empty, consider the current page as
+the first page of the book.  [/INST] """
 ```
 
 The template includes placeholders {previous_sum} and {current_page} to dynamically insert the summary of the book before the current page and the content of the current page, respectively. The instructions guide the model to generate a combined summary considering both the previous summary and the current page, with a special case handling for the first page if the previous summary is empty. You can customise the prompt accordingly varying upon your needs.
@@ -33,7 +36,8 @@ Now, let's assume you have already processed a book pages in the form of a list,
 
 ```python
 def summarize_page(model_endpoint, previous_sum, current_page):
-    query = PROMPT_TEMPLATE.format(previous_sum=previous_sum, current_page=current_page)
+    query = PROMPT_TEMPLATE.format(previous_sum=previous_sum,
+current_page=current_page)
     data = {"query": query}
     response = requests.post(model_endpoint, json=data)
     response = eval(response.text)
@@ -41,7 +45,8 @@ def summarize_page(model_endpoint, previous_sum, current_page):
 
 prev_sum = ""
 for i in range(len(pdf_reader.pages)):  
-    prev_sum = summarize_page(llama_enpoint, prev_sum, pdf_reader.pages[i].extract_text())
+    prev_sum = summarize_page(llama_enpoint, prev_sum,
+pdf_reader.pages[i].extract_text())
 
 final_summary = prev_sum
 print(final_summary)
@@ -83,11 +88,13 @@ for page in pdf_reader.pages:
 extractive_summary = extractive_summarization(text, ratio=0.2)
 
 PROMPT_TEMPLATE = """[INST] <<SYS>>
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
+Below is an instruction that describes a task.
+Write a response that appropriately completes the request.
 <</SYS>>
 You are given a extractive summary of a book as follows:
 {extractive_summary}
-Now, generate a well-written summary such that it describes the contents of the book in a coherent manner.
+Now, generate a well-written summary such that it describes
+the contents of the book in a coherent manner.
 Try to be as descriptive as possible.[/INST] """
 
 query = PROMPT_TEMPLATE.format(extractive_summary=extractive_summary)
