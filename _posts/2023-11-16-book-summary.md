@@ -1,5 +1,5 @@
 ---
-title: Efficient Book Summarization by harnessing the Power of Large Language Models
+title: Efficient Book Summarization using Large Language Models
 ---
 
 ![book](https://basmo.app/wp-content/uploads/2021/10/how-to-write-a-book-summary-1.gif)
