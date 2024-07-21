@@ -5,11 +5,13 @@ title: Diffusion Models
 
 Diffusion models are rapidly emerging as a dominant force in the field of generative artificial intelligence, showcasing an unparalleled ability to synthesize high-quality, diverse images. Unlike previous generative approaches like Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs), Diffusion Models employ a unique two-stage process that leverages the controlled introduction and removal of noise to learn complex data distributions.
 
-### The Diffusion Process: A Gradual Descent into Noise
+### The Diffusion Process:
+![fd](https://theaisummer.com/static/1f5f940d6d3f1e00b3777066f6695331/073e9/forward-diffusion.png)
 
 Diffusion models begin by systematically corrupting input data, such as images, through a process termed **forward diffusion**. This involves the iterative addition of Gaussian noise, following a predefined **variance schedule** that dictates the amount of noise injected at each timestep. The process continues until the data is transformed into a sample of pure, unstructured noise, effectively obscuring the original information.
 
-### Reversing the Chaos: The Power of Denoising
+### Reversing the Diffusion: Denoising
+![rd](https://i.ytimg.com/vi/687zEGODmHA/maxresdefault.jpg)
 
 Central to diffusion models is the ability to reverse this noise injection process. A dedicated neural network, often a U-Net, is trained to predict the specific noise pattern added at each timestep. By subtracting the predicted noise from the corrupted data, the model gradually **denoises** the image, progressively recovering its original structure and detail. This iterative refinement allows the model to capture intricate relationships within the data distribution, resulting in remarkably realistic and varied outputs.
 
@@ -18,12 +20,14 @@ Central to diffusion models is the ability to reverse this noise injection proce
 The image generation process begins with a tensor of pure random noise, representing a blank slate. This noise is passed through the trained U-Net, which, conditioned on the final timestep of the forward process, predicts the noise present. Subtracting this predicted noise initiates the reverse diffusion, moving one step closer to a cleaner image. This iterative procedure continues, progressively denoising the image at each timestep, until a final, generated image emerges. The result is a novel image that reflects the learned data distribution, exhibiting remarkable fidelity and diversity.
 
 ### Harnessing Text: Conditional Image Generation
+![cig](https://miro.medium.com/v2/resize:fit:1400/0*8L-kRMJC38WEtroC)
 
 Beyond unconditional generation, Diffusion Models demonstrate a powerful capacity for **conditional image generation**, guided by textual descriptions. This involves transforming the textual prompt into a **text embedding** using a language model, typically a transformer-based architecture. This embedding encapsulates the semantic meaning of the description, providing the U-Net with contextual information.
 
 During the denoising process, this text embedding is incorporated to **condition** the U-Net's predictions. The model learns to predict noise patterns that align with the textual description, effectively guiding the generation towards images that correspond to the given prompt. Various techniques, including concatenation, cross-attention, and modulation, can be employed to integrate the text embedding into the U-Net architecture.
 
 ### The Advantages of Diffusion Models: Quality, Diversity, and Stability
+![comp](https://miro.medium.com/v2/resize:fit:1200/1*_5GpdejeOvt61ew4aPtT_g.png)
 
 Diffusion Models exhibit several compelling advantages over traditional generative approaches:
 
