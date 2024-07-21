@@ -58,11 +58,81 @@ where:
 
 This equation essentially states that the noisy data point at time $t$ is sampled from a Gaussian distribution whose mean is a scaled version of the previous data point and whose variance is determined by the variance schedule. As we progress through the timesteps, the influence of the original data point diminishes while the noise component dominates, ultimately leading to a sample $x_T$ that is essentially pure Gaussian noise.
 
-#### The Variance Schedule:
+**Beta (β) - The Variance Schedule:**
 
-The variance schedule $\beta_t$ plays a crucial role in controlling the pace and intensity of the diffusion process. A linear schedule, where $\beta_t$ increases linearly with time, is a common choice, but other schedules, such as cosine or sigmoid, offer more nuanced control over the noise injection.
+*  $\beta_t$ represents the variance of the Gaussian noise added at timestep *t*. It's a value between 0 and 1, where:
+    *  $\beta_t$ close to 0 means adding very little noise.
+    *  $\beta_t$ close to 1 means adding a lot of noise, making the data almost completely random.
 
-A key observation is that the sum of Gaussian distributions is itself a Gaussian distribution. Leveraging this property, we can directly sample the noisy version of the data at any arbitrary timestep $t$ without iterating through all the previous steps. This allows for efficient implementation and computational savings during training and sampling.
+* The schedule defines how $\beta_t$ changes over time.  Common schedules include:
+    * **Linear:** $\beta_t$ increases linearly from a small value to a larger value.
+    * **Cosine:** $\beta_t$ follows a cosine function, allowing for a smoother transition of noise levels.
+    * **Other:** Various other schedules can be designed to control the noise injection process.
+
+**Alpha (α) - Signal Retention:**
+
+* $\alpha_t = 1 - \beta_t$ represents the amount of signal (original data) we retain at timestep *t*.  
+*  It's the complement of the noise variance.
+
+**Alpha Bar (ᾱ) - Cumulative Signal Retention:**
+
+* $\bar{\alpha}_t = \prod_{s=1}^{t} \alpha_s$ represents the cumulative product of alphas up to timestep *t*.
+*  It signifies the total fraction of the original signal remaining after *t* steps of noise addition.
+
+**The Diffusion Equation:**
+
+The equation governing the forward diffusion process at timestep *t* is:
+
+$$x_t = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon$$
+
+where:
+
+*  $x_t$ is the noisy data point at timestep *t*.
+* $x_0$ is the original data point.
+* $\epsilon$ is randomly sampled Gaussian noise from  $\mathcal{N}(0, I)$.
+
+**Explanation:**
+
+* The equation blends the original data ($x_0$) with Gaussian noise ($\epsilon$). 
+* The weighting of the original data and the noise is controlled by $\bar{\alpha}_t$:
+    * At the beginning (t=0), $\bar{\alpha}_t$ is close to 1, meaning we retain most of the original signal.
+    * As *t* increases, $\bar{\alpha}_t$ gets smaller, reducing the influence of the original data and increasing the noise contribution.
+    * When *t* reaches the final timestep (T), $\bar{\alpha}_t$ is very close to 0, resulting in an $x_T$ that is almost entirely noise.
+
+**Intuition:**
+
+* **Beta:** Controls the "strength" of the noise added at each step.
+* **Alpha:**  Represents how much of the original signal we preserve at each step.
+* **Alpha Bar:**  Tracks the total signal preservation across all timesteps up to *t*.
+
+**Why Cumulative Alphas (ᾱ)?**
+
+* Efficient Computation: Instead of iteratively adding noise at each step, we can directly sample $x_t$ for any arbitrary timestep *t* using the formula with $\bar{\alpha}_t$. This significantly speeds up the diffusion process.
+* Control over Signal Decay: $\bar{\alpha}_t$  provides a clear measure of how much information from the original data is still present in the noisy sample at timestep *t*. 
+
+By carefully designing the variance schedule ($\beta_t$) and understanding the roles of $\alpha$ and $\bar{\alpha}$, we can precisely control the diffusion process, ensuring a smooth transition from data to noise while retaining enough information for the reverse process to learn effectively. 
+
+**Reconstructing the Data:**
+
+To get the data point at timestep *t-1* ($x_{t-1}$) from the noisy data point at timestep *t* ($x_t$), we can rearrange the iterative diffusion equation we derived earlier:
+
+$$x_t =  \sqrt{\frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}} x_{t-1} + \sqrt{1 - \frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}} \epsilon_t$$
+
+Solving for $x_{t-1}$, we get:
+
+$$ x_{t-1} = \frac{1}{\sqrt{\frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}}} \left( x_t - \sqrt{1 - \frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}} \epsilon_t \right) $$
+
+**Explanation:**
+
+* This equation allows us to move one step back in the diffusion process, from a noisier image at timestep *t* to a less noisy version at timestep *t-1*.
+* It involves subtracting the noise component (scaled by the appropriate factor) from the noisy data and then scaling the result to account for the signal retention between timesteps.
+* The term $\frac{1}{\sqrt{\frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}}}$ acts as a normalization factor, adjusting for the change in signal strength between consecutive timesteps.
+
+**Key Points:**
+
+* **Knowledge of Noise:** This formula relies on knowing the exact noise added at timestep *t* ($\epsilon_t$). During training, we have this information since we sampled the noise ourselves. However, during image generation, we don't know this noise, so the model has to predict it.
+* **Iterative Denoising:**  By applying this formula repeatedly, starting from the final timestep (T) and moving backward to timestep 0, we can progressively remove noise and reconstruct the original data point. 
+
 
 #### Reverse Diffusion:
 
