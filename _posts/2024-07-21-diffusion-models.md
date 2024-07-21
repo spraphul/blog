@@ -76,7 +76,7 @@ This equation essentially states that the noisy data point at time $t$ is sample
 
 **Alpha Bar (ᾱ) - Cumulative Signal Retention:**
 
-* $$\bar{\alpha}_t = \prod_{s=1}^{t} \alpha_s$$ represents the cumulative product of alphas up to timestep *t*.
+* $\bar{\alpha}_t = \prod_{s=1}^{t} \alpha_s$ represents the cumulative product of alphas up to timestep *t*.
 *  It signifies the total fraction of the original signal remaining after *t* steps of noise addition.
 
 **The Diffusion Equation:**
@@ -123,19 +123,19 @@ $$
 
 1. **Subtract the Noise Term**:
    - Compute the noise term:
-     $$
+     $
      \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon
-     $$
+     $
    - Subtract this term from the noisy data \( x_t \):
-     $$
+     $
      x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon
-     $$
+     $
 
 2. **Scale Back**:
    - Divide the result by \( \sqrt{\bar{\alpha}_t} \) to recover the original data:
-     $$
+     $
      x_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon}{\sqrt{\bar{\alpha}_t}}
-     $$
+     $
      
 
 **Key Points:**
