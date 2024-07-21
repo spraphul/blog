@@ -2,8 +2,6 @@
 title: Diffusion Models
 ---
 
-## Diffusion Models: Redefining Generative AI through Controlled Noise
-
 Diffusion models are rapidly emerging as a dominant force in the field of generative artificial intelligence, showcasing an unparalleled ability to synthesize high-quality, diverse images. Unlike previous generative approaches like Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs), Diffusion Models employ a unique two-stage process that leverages the controlled introduction and removal of noise to learn complex data distributions.
 
 ### The Diffusion Process: A Gradual Descent into Noise
@@ -20,7 +18,7 @@ The image generation process begins with a tensor of pure random noise, represen
 
 ### Harnessing Text: Conditional Image Generation
 
-Beyond unconditional generation, Diffusion Models demonstrate a powerful capacity for **conditional image generation**, guided by textual descriptions. This involves transforming the textual prompt into a **text embedding** using a language model, typically a transformer-based architecture like CLIP. This embedding encapsulates the semantic meaning of the description, providing the U-Net with contextual information.
+Beyond unconditional generation, Diffusion Models demonstrate a powerful capacity for **conditional image generation**, guided by textual descriptions. This involves transforming the textual prompt into a **text embedding** using a language model, typically a transformer-based architecture. This embedding encapsulates the semantic meaning of the description, providing the U-Net with contextual information.
 
 During the denoising process, this text embedding is incorporated to **condition** the U-Net's predictions. The model learns to predict noise patterns that align with the textual description, effectively guiding the generation towards images that correspond to the given prompt. Various techniques, including concatenation, cross-attention, and modulation, can be employed to integrate the text embedding into the U-Net architecture.
 
@@ -33,11 +31,11 @@ Diffusion Models exhibit several compelling advantages over traditional generati
 
 While the iterative nature of the sampling process can lead to slower generation speeds compared to VAEs and GANs, the compelling advantages in image quality, diversity, and training stability solidify Diffusion Models as a groundbreaking force in generative AI. With ongoing research exploring new variants and applications, the potential of these models to reshape the landscape of image generation and beyond is truly remarkable.
 
-### A Mathematical Symphony: Delving into the Mechanics of Diffusion Models
+### Diving into the Mechanics of Diffusion Models
 
-While the conceptual framework of diffusion models might seem intuitive, their inner workings are underpinned by an elegant mathematical foundation. To truly appreciate their capabilities, we must embark on a journey into the realm of probability distributions and Markov chains, unraveling the equations that orchestrate the intricate dance between diffusion and denoising.
+While the conceptual framework of diffusion models might seem intuitive, their inner workings are underpinned by an elegant mathematical foundation. To truly appreciate their capabilities, we will explore the probability distributions and Markov chains behind diffusion models, understanding the equations that define the diffusion and denoising processes.
 
-#### Forward Diffusion: A Stochastic Dance with Noise
+#### Forward Diffusion:
 
 The forward diffusion process can be formalized as a Markov chain, a sequence of random variables where each step depends solely on the preceding one. Given an initial data point $x_0$, we iteratively sample noisy versions of the data by adding Gaussian noise according to the following equation:
 
@@ -55,13 +53,13 @@ where:
 
 This equation essentially states that the noisy data point at time $t$ is sampled from a Gaussian distribution whose mean is a scaled version of the previous data point and whose variance is determined by the variance schedule. As we progress through the timesteps, the influence of the original data point diminishes while the noise component dominates, ultimately leading to a sample $x_T$ that is essentially pure Gaussian noise.
 
-#### The Variance Schedule: A Symphony of Noise Control
+#### The Variance Schedule:
 
 The variance schedule $\beta_t$ plays a crucial role in controlling the pace and intensity of the diffusion process. A linear schedule, where $\beta_t$ increases linearly with time, is a common choice, but other schedules, such as cosine or sigmoid, offer more nuanced control over the noise injection.
 
 A key observation is that the sum of Gaussian distributions is itself a Gaussian distribution. Leveraging this property, we can directly sample the noisy version of the data at any arbitrary timestep $t$ without iterating through all the previous steps. This allows for efficient implementation and computational savings during training and sampling.
 
-#### Reverse Diffusion: Denoising with a Learned Compass
+#### Reverse Diffusion:
 
 The reverse process, denoising, aims to learn the reverse transition probabilities $p_\theta(x_{t-1} \mid x_t)$, parameterized by a neural network with parameters $\theta$. This network, typically a U-Net, takes the noisy image $x_t$ and the timestep $t$ as input and outputs a prediction of the noise added at that timestep.
 
@@ -90,4 +88,4 @@ Since the U-Net uses shared parameters across all timesteps, it needs a mechanis
 
 ### The Mathematical Elegance of Diffusion Models
 
-The mathematical framework of diffusion models, built on probability distributions, Markov chains, and neural network optimization, provides a robust and elegant approach to generative modeling. By systematically corrupting and denoising data, these models capture the intricate structure of complex data distributions, enabling the generation of high-quality, diverse samples, and even conditional image generation guided by textual descriptions. The ongoing development of new variants and applications promises to further expand the scope and impact of these remarkable models in the field of artificial intelligence.
+The mathematical framework of diffusion models, built on probability distributions, Markov chains, and neural network optimization, provides a robust and elegant approach to generative modeling. By systematically corrupting and denoising data, these models capture the intricate structure of complex data distributions, enabling the generation of high-quality, diverse samples, and even conditional image generation guided by textual descriptions. 
