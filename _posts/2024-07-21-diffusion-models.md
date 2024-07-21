@@ -28,8 +28,8 @@ During the denoising process, this text embedding is incorporated to **condition
 
 Diffusion Models exhibit several compelling advantages over traditional generative approaches:
 
-- **Exceptional Sample Quality and Diversity:** Diffusion models have consistently demonstrated the ability to generate images with remarkable fidelity and realism, often surpassing the performance of GANs. Their ability to learn the nuanced structure of data distributions allows for the generation of diverse samples that accurately reflect the variety within the training data. This is further enhanced by their aptitude for conditional generation, enabling the creation of tailored images guided by textual descriptions.
-- **Robust and Stable Training:** Compared to the often-challenging training process of GANs, Diffusion Models offer a significantly more stable and predictable training experience. They are less susceptible to issues like mode collapse and vanishing gradients, making them a more accessible and reliable option for researchers and practitioners.
+* **Exceptional Sample Quality and Diversity:** Diffusion models have consistently demonstrated the ability to generate images with remarkable fidelity and realism, often surpassing the performance of GANs. Their ability to learn the nuanced structure of data distributions allows for the generation of diverse samples that accurately reflect the variety within the training data. This is further enhanced by their aptitude for conditional generation, enabling the creation of tailored images guided by textual descriptions.
+* **Robust and Stable Training:** Compared to the often-challenging training process of GANs, Diffusion Models offer a significantly more stable and predictable training experience. They are less susceptible to issues like mode collapse and vanishing gradients, making them a more accessible and reliable option for researchers and practitioners.
 
 While the iterative nature of the sampling process can lead to slower generation speeds compared to VAEs and GANs, the compelling advantages in image quality, diversity, and training stability solidify Diffusion Models as a groundbreaking force in generative AI. With ongoing research exploring new variants and applications, the potential of these models to reshape the landscape of image generation and beyond is truly remarkable.
 
@@ -47,11 +47,11 @@ $$
 
 where:
 
-- $x_t$ represents the noisy data point at timestep $t$.
-- $x_{t-1}$ is the data point at the previous timestep.
-- $\beta_t$ is the variance schedule parameter at timestep $t$, controlling the noise level.
-- $\mathcal{N}(x_t; \mu, \Sigma)$ denotes the Gaussian distribution with mean $\mu$ and covariance matrix $\Sigma$.
-- $I$ is the identity matrix.
+* $x_t$ represents the noisy data point at timestep $t$.
+* $x_{t-1}$ is the data point at the previous timestep.
+* $\beta_t$ is the variance schedule parameter at timestep $t$, controlling the noise level.
+* $\mathcal{N}(x_t; \mu, \Sigma)$ denotes the Gaussian distribution with mean $\mu$ and covariance matrix $\Sigma$.
+* $I$ is the identity matrix.
 
 This equation essentially states that the noisy data point at time $t$ is sampled from a Gaussian distribution whose mean is a scaled version of the previous data point and whose variance is determined by the variance schedule. As we progress through the timesteps, the influence of the original data point diminishes while the noise component dominates, ultimately leading to a sample $x_T$ that is essentially pure Gaussian noise.
 
@@ -79,8 +79,8 @@ $$
 
 where:
 
-- $\epsilon$ represents the actual noise added to the image $x_0$ at timestep $t$.
-- $\epsilon_\theta(x_t, t)$ is the noise predicted by the neural network with parameters $\theta$ given the noisy image $x_t$ and timestep $t$.
+* $\epsilon$ represents the actual noise added to the image $x_0$ at timestep $t$.
+* $\epsilon_\theta(x_t, t)$ is the noise predicted by the neural network with parameters $\theta$ given the noisy image $x_t$ and timestep $t$.
 
 By minimizing this loss, the neural network learns to accurately predict the noise at each timestep, effectively reversing the forward diffusion process and enabling the generation of new images.
 
