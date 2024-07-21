@@ -168,23 +168,23 @@ The Swiss roll is a well-known synthetic dataset used for dimensionality reducti
 
 #### Training a Small Diffusion Network
 
-In this demonstration, we’ll train a small diffusion network to construct the Swiss roll distribution from pure noise. I used the code provided at [https://github.com/albarji/toy-diffusion/blob/master/swissRoll.ipynb](https://github.com/albarji/toy-diffusion/blob/master/swissRoll.ipynb) for the demonstration below. The process involves the following key steps: 
+I used the code provided at [https://github.com/albarji/toy-diffusion/blob/master/swissRoll.ipynb](https://github.com/albarji/toy-diffusion/blob/master/swissRoll.ipynb) to train a simple diffusion model for reconstructing a swiss roll distribution from a random noise. The process involves the following key steps: 
 
-1. **Data Preparation**: We start with a dataset that represents the 2-D Swiss roll distribution. This dataset will serve as our target for the diffusion model to learn.
+1. **Data Preparation**: It starts with a dataset that represents the 2-D Swiss roll distribution. This dataset will serve as our target for the diffusion model to learn.
 
-2. **Noise Sampling**: We will use a cosine scheduler for noise sampling and adding noise to the generated swiss dataset.
+2. **Noise Sampling**: Then it uses a cosine scheduler for noise sampling and adding noise to the generated swiss dataset.
 
-3. **Model Architecture**: We design a small diffusion network, which includes a series of convolutional layers, normalization layers, and activation functions. The architecture is chosen to balance computational efficiency with the ability to learn complex structures.
+3. **Model Architecture**: The code demonstrates how to design a small diffusion network, which includes a series of linear layers(for Upsampling and Downsampling) and activation functions.
 
-4. **Training the Network**: The model is trained to learn the reverse process of diffusion. This involves gradually denoising a sample of pure noise until it resembles the 2-D Swiss roll distribution. We use a loss function that penalizes deviations from the target Swiss roll, guiding the network to refine its output.
+4. **Training the Network**: The model is trained to learn the reverse process of diffusion. This involves gradually denoising a sample of pure noise until it resembles the 2-D Swiss roll distribution. It uses a MSE loss function which minimizes the difference between the actual noise we sampled and the noise which the model predicted.
 
 5. **Diffusion Process**: During training, the model learns to simulate the diffusion process in reverse. Starting from pure noise, the network iteratively refines the sample, applying learned transformations to approach the Swiss roll distribution.
 
-6. **Evaluation and Visualization**: After training, we evaluate the model's performance by generating samples from the diffusion process. We visualize these samples to assess how well the network has learned to reconstruct the 2-D Swiss roll distribution.
+6. **Evaluation and Visualization**: After training, we evaluate the model's performance by generating samples from the diffusion process. We visualize these samples to assess how well the network has learned to reconstruct the 2-D Swiss roll distribution in 40 diffusion steps starting from a pure noise.
 
 #### Results and Insights
 
-Upon visualizing the results, we expect to see that the diffusion network effectively transforms random noise into a well-defined 2-D Swiss roll distribution. This demonstrates the model’s ability to capture and generate complex structures from seemingly unstructured input. The 2-D Swiss roll serves as a valuable test case, showing how diffusion models can handle intricate data structures and learn meaningful representations.
+Upon visualizing the results, we expect to see that the diffusion network effectively transforms random noise into a well-defined 2-D Swiss roll distribution. This demonstrates the model’s ability to capture and generate complex structures from seemingly unstructured input. 
 
 ![diffusion](https://github.com/spraphul/blog/blob/gh-pages/_posts/swissroll.gif?raw=true)
 
