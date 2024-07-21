@@ -3,52 +3,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
-
 body {
   background-color: #121212;
   color: #ffffff;
-  font-family: "Shantell Sans", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 a {
   color: #bb86fc;
-  font-family: "Shantell Sans", cursive;
+  
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 .navbar {
   background-color: #333333;
-  font-family: "Shantell Sans", cursive;
+  
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 /* Ensure all sections, articles, and divs are covered */
 section, article, div {
   background-color: inherit;
   color: inherit;
-  font-family: "Shantell Sans", cursive;
+  
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 /* Additional styles for specific elements */
 header, footer, nav {
   background-color: #333333;
   color: #ffffff;
-  font-family: "Shantell Sans", cursive;
+  
+  font-family: "Caveat", cursive;
+  font-size: 36px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
-  font-family: "Shantell Sans", cursive;
+  
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 p, li {
   color: #dcdcdc;
-  font-family: "Shantell Sans", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 /* Syntax highlighting for code blocks */
 pre, code {
   background-color: #1e1e1e;
   color: #dcdcdc;
-  font-family: "Shantell Sans", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 /* Ensure form elements are also styled */
@@ -56,7 +68,8 @@ input, textarea, select, button {
   background-color: #333333;
   color: #ffffff;
   border: 1px solid #555555;
-  font-family: "Shantell Sans", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 /* Apply styles to tables */
@@ -64,13 +77,15 @@ table {
   background-color: #222222;
   color: #dcdcdc;
   border-collapse: collapse;
-  font-family: "Shantell Sans", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 th, td {
   border: 1px solid #444444;
   padding: 8px;
-  font-family: "Shantell Sans", cursive;
+  ffont-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 /* Style for blockquotes */
@@ -80,7 +95,8 @@ blockquote {
   color: #dcdcdc;
   padding: 10px 20px;
   margin: 10px 0;
-  font-family: "Shantell Sans", cursive;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
 }
 
 
