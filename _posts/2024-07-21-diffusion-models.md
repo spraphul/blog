@@ -74,6 +74,7 @@ This loss function can be expressed as:
 $$
 \mathcal{L}(\theta) = \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\theta(x_t, t)\|^2 \right]
 $$
+
 where:
 
 * $\epsilon$ represents the actual noise added to the image $x_0$ at timestep $t$.
