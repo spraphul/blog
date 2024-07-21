@@ -11,7 +11,7 @@ Diffusion models are rapidly emerging as a dominant force in the field of genera
 Diffusion models begin by systematically corrupting input data, such as images, through a process termed **forward diffusion**. This involves the iterative addition of Gaussian noise, following a predefined **variance schedule** that dictates the amount of noise injected at each timestep. The process continues until the data is transformed into a sample of pure, unstructured noise, effectively obscuring the original information.
 
 ### Reversing the Diffusion: Denoising
-![rd](https://i.ytimg.com/vi/687zEGODmHA/maxresdefault.jpg)
+![rd](https://www.assemblyai.com/blog/content/images/2022/05/image-1.png)
 
 Central to diffusion models is the ability to reverse this noise injection process. A dedicated neural network, often a U-Net, is trained to predict the specific noise pattern added at each timestep. By subtracting the predicted noise from the corrupted data, the model gradually **denoises** the image, progressively recovering its original structure and detail. This iterative refinement allows the model to capture intricate relationships within the data distribution, resulting in remarkably realistic and varied outputs.
 
