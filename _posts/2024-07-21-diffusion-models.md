@@ -152,7 +152,7 @@ By minimizing this loss, the neural network learns to accurately predict the noi
 
 #### Time Embeddings: Providing Temporal Context
 
-Since the U-Net uses shared parameters across all timesteps, it needs a mechanism to differentiate between the varying noise levels at different stages of the diffusion process. This is achieved through **time embeddings**, where the timestep $t$ is encoded as a continuous vector representation and provided as additional input to the U-Net. This embedding allows the network to adjust its behavior based on the temporal context, ensuring accurate noise prediction at each timestep.
+Since the U-Net uses shared parameters across all timesteps, it needs a mechanism to differentiate between the varying noise levels at different stages of the diffusion process. This is achieved through **time embeddings**, where the timestep $t$ is encoded as a continuous vector representation and provided as additional input to the U-Net. Positional embeddings used in transformers have been used to represent time steps in Diffusion Models as well in recent works. This embedding allows the network to adjust its behavior based on the temporal context, ensuring accurate noise prediction at each timestep.
 
 ### The Mathematical Elegance of Diffusion Models
 
