@@ -1,3 +1,70 @@
+/* _sass/_dark-theme.scss */
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+a {
+  color: #bb86fc;
+}
+
+.navbar {
+  background-color: #333333;
+}
+
+/* Ensure all sections, articles, and divs are covered */
+section, article, div {
+  background-color: inherit;
+  color: inherit;
+}
+
+/* Additional styles for specific elements */
+header, footer, nav {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+p, li {
+  color: #dcdcdc;
+}
+
+/* Syntax highlighting for code blocks */
+pre, code {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+}
+
+/* Ensure form elements are also styled */
+input, textarea, select, button {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+/* Apply styles to tables */
+table {
+  background-color: #222222;
+  color: #dcdcdc;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #444444;
+  padding: 8px;
+}
+
+/* Style for blockquotes */
+blockquote {
+  background-color: #1e1e1e;
+  border-left: 4px solid #bb86fc;
+  color: #dcdcdc;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
 
 
 /* Add other custom styles as needed */
