@@ -114,22 +114,26 @@ By carefully designing the variance schedule ($\beta_t$) and understanding the r
 
 **Reconstructing the Data:**
 
-Given the noisy data \( x_t \), the noise \( \epsilon \), and the timestamp \( t \), you can estimate the original data \( x_0 \) using the following formula:
+To recover the original data \( x_0 \) from the noisy data \( x_t \) at timestep \( t \), given the noise \( \epsilon \), use the following formula:
 
-### Formula
+$$
+x_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon}{\sqrt{\bar{\alpha}_t}}
+$$
 
-\[ x_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon}{\sqrt{\bar{\alpha}_t}} \]
-
-### Explanation
 
 1. **Subtract the Noise Term**:
-   - Compute the noise term: \( \text{Noise term} = \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon \).
+   - Compute the noise term: \( \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon \).
    - Subtract this term from the noisy data \( x_t \):
-     \[ x_t - \text{Noise term} \]
+     $$
+     x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon
+     $$
 
 2. **Scale Back**:
    - Divide the result by \( \sqrt{\bar{\alpha}_t} \) to recover the original data:
-     \[ x_0 = \frac{x_t - \text{Noise term}}{\sqrt{\bar{\alpha}_t}} \]
+     $$
+     x_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon}{\sqrt{\bar{\alpha}_t}}
+     $$
+
 
 **Key Points:**
 
