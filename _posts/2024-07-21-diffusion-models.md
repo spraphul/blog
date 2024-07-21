@@ -114,19 +114,22 @@ By carefully designing the variance schedule ($\beta_t$) and understanding the r
 
 **Reconstructing the Data:**
 
-To get the data point at timestep *t-1* ($x_{t-1}$) from the noisy data point at timestep *t* ($x_t$), we can rearrange the iterative diffusion equation we derived earlier:
+Given the noisy data \( x_t \), the noise \( \epsilon \), and the timestamp \( t \), you can estimate the original data \( x_0 \) using the following formula:
 
-$$x_t =  \sqrt{\frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}} x_{t-1} + \sqrt{1 - \frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}} \epsilon_t$$
+### Formula
 
-Solving for $x_{t-1}$, we get:
+\[ x_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon}{\sqrt{\bar{\alpha}_t}} \]
 
-$$ x_{t-1} = \frac{1}{\sqrt{\frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}}} \left( x_t - \sqrt{1 - \frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}} \epsilon_t \right) $$
+### Explanation
 
-**Explanation:**
+1. **Subtract the Noise Term**:
+   - Compute the noise term: \( \text{Noise term} = \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon \).
+   - Subtract this term from the noisy data \( x_t \):
+     \[ x_t - \text{Noise term} \]
 
-* This equation allows us to move one step back in the diffusion process, from a noisier image at timestep *t* to a less noisy version at timestep *t-1*.
-* It involves subtracting the noise component (scaled by the appropriate factor) from the noisy data and then scaling the result to account for the signal retention between timesteps.
-* The term $\frac{1}{\sqrt{\frac{\bar{\alpha}_t}{\bar{\alpha}_{t-1}}}}$ acts as a normalization factor, adjusting for the change in signal strength between consecutive timesteps.
+2. **Scale Back**:
+   - Divide the result by \( \sqrt{\bar{\alpha}_t} \) to recover the original data:
+     \[ x_0 = \frac{x_t - \text{Noise term}}{\sqrt{\bar{\alpha}_t}} \]
 
 **Key Points:**
 
