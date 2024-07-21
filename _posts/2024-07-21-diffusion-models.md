@@ -188,7 +188,7 @@ Upon visualizing the results, we expect to see that the diffusion network effect
 
 ![diffusion](https://github.com/spraphul/blog/blob/gh-pages/_posts/swissroll.gif?raw=true)
 
-#### Conclusion
+## Conclusion
 
 This demonstration highlights the power of diffusion models in learning and generating complex data distributions. By starting from pure noise and training on a classic dataset like the Swiss roll, we can visualize the efficacy of these models in reconstructing and understanding complex data structures. Diffusion Models are revolutionizing the way we generate content with AI. Tools like DALL-E 3 and stable diffusion are already showcasing their ability to create stunning visuals from textual descriptions.
 
@@ -200,4 +200,9 @@ But the potential of Diffusion Models extends far beyond image creation! Their p
 * **Personalized creations:** Picture AI crafting music that resonates with your mood, artwork that mirrors your style, or medicine tailored specifically to your needs!
 
 While Diffusion Models are still in their early stages, their potential is immense! They could transform how we create and experience a wide array of content in the future. 
+
+## References
+1. [https://www.youtube.com/watch?v=a4Yfz2FxXiY](https://www.youtube.com/watch?v=a4Yfz2FxXiY)
+2. [https://arxiv.org/pdf/2102.09672](https://arxiv.org/pdf/2102.09672)
+3. [https://github.com/albarji/toy-diffusion/blob/master/swissRoll.ipynb](https://github.com/albarji/toy-diffusion/blob/master/swissRoll.ipynb)
 
