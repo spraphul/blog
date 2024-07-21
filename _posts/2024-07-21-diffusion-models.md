@@ -119,23 +119,6 @@ To recover the original data \( x_0 \) from the noisy data \( x_t \) at timestep
 $$
 x_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon}{\sqrt{\bar{\alpha}_t}}
 $$
-
-
-1. **Subtract the Noise Term**:
-   - Compute the noise term:
-     $
-     \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon
-     $
-   - Subtract this term from the noisy data \( x_t \):
-     $
-     x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon
-     $
-
-2. **Scale Back**:
-   - Divide the result by \( \sqrt{\bar{\alpha}_t} \) to recover the original data:
-     $
-     x_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon}{\sqrt{\bar{\alpha}_t}}
-     $
      
 
 **Key Points:**
@@ -174,3 +157,37 @@ Since the U-Net uses shared parameters across all timesteps, it needs a mechanis
 ### The Mathematical Elegance of Diffusion Models
 
 The mathematical framework of diffusion models, built on probability distributions, Markov chains, and neural network optimization, provides a robust and elegant approach to generative modeling. By systematically corrupting and denoising data, these models capture the intricate structure of complex data distributions, enabling the generation of high-quality, diverse samples, and even conditional image generation guided by textual descriptions. 
+
+## Demonstrating Diffusion with the Swiss Roll Distribution
+
+After delving into the mathematical intricacies of diffusion models, let’s put theory into practice with a classic example: the Swiss roll distribution. This example provides a clear and intuitive demonstration of how diffusion models can reconstruct complex structures from noise.
+
+#### The Swiss Roll Distribution: An Overview
+
+The Swiss roll is a well-known synthetic dataset used for dimensionality reduction and manifold learning. Imagine a two-dimensional flat sheet of dough that is rolled into a cylinder and then unrolled into a spiral shape. This spiral structure, when viewed in three-dimensional space, resembles a rolled-up Swiss cheese. For our demonstration, we will use a 2-D version of the Swiss roll to simplify visualization and better illustrate the model’s performance.
+
+#### Training a Small Diffusion Network
+
+In this demonstration, we’ll train a small diffusion network to construct the Swiss roll distribution from pure noise. I used the code provided at [https://github.com/albarji/toy-diffusion/blob/master/swissRoll.ipynb](https://github.com/albarji/toy-diffusion/blob/master/swissRoll.ipynb) for the demonstration below. The process involves the following key steps: 
+
+1. **Data Preparation**: We start with a dataset that represents the 2-D Swiss roll distribution. This dataset will serve as our target for the diffusion model to learn.
+
+2. **Noise Sampling**: We will use a cosine scheduler for noise sampling and adding noise to the generated swiss dataset.
+
+3. **Model Architecture**: We design a small diffusion network, which includes a series of convolutional layers, normalization layers, and activation functions. The architecture is chosen to balance computational efficiency with the ability to learn complex structures.
+
+4. **Training the Network**: The model is trained to learn the reverse process of diffusion. This involves gradually denoising a sample of pure noise until it resembles the 2-D Swiss roll distribution. We use a loss function that penalizes deviations from the target Swiss roll, guiding the network to refine its output.
+
+5. **Diffusion Process**: During training, the model learns to simulate the diffusion process in reverse. Starting from pure noise, the network iteratively refines the sample, applying learned transformations to approach the Swiss roll distribution.
+
+6. **Evaluation and Visualization**: After training, we evaluate the model's performance by generating samples from the diffusion process. We visualize these samples to assess how well the network has learned to reconstruct the 2-D Swiss roll distribution.
+
+#### Results and Insights
+
+Upon visualizing the results, we expect to see that the diffusion network effectively transforms random noise into a well-defined 2-D Swiss roll distribution. This demonstrates the model’s ability to capture and generate complex structures from seemingly unstructured input. The 2-D Swiss roll serves as a valuable test case, showing how diffusion models can handle intricate data structures and learn meaningful representations.
+
+![diffusion](https://github.com/spraphul/blog/blob/gh-pages/_posts/swissroll.gif?raw=true)
+
+#### Conclusion
+
+This demonstration highlights the power of diffusion models in learning and generating complex data distributions. By starting from pure noise and training on a classic dataset like the Swiss roll, we can visualize the efficacy of these models in reconstructing and understanding complex data structures. This process not only showcases the practical application of diffusion models but also provides insights into their capabilities for various data generation tasks.
