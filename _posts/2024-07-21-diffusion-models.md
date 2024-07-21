@@ -53,7 +53,7 @@ where:
 * $x_t$ represents the noisy data point at timestep $t$.
 * $x_{t-1}$ is the data point at the previous timestep.
 * $\beta_t$ is the variance schedule parameter at timestep $t$, controlling the noise level.
-* $\mathcal{N}(x_t; \mu, \Sigma)$ denotes the Gaussian distribution with mean $\mu$ and covariance matrix $\Sigma$.
+* $N(x_t; \mu, \Sigma)$ denotes the Gaussian distribution with mean $\mu$ and covariance matrix $\Sigma$.
 * $I$ is the identity matrix.
 
 This equation essentially states that the noisy data point at time $t$ is sampled from a Gaussian distribution whose mean is a scaled version of the previous data point and whose variance is determined by the variance schedule. As we progress through the timesteps, the influence of the original data point diminishes while the noise component dominates, ultimately leading to a sample $x_T$ that is essentially pure Gaussian noise.
