@@ -122,7 +122,10 @@ $$
 
 
 1. **Subtract the Noise Term**:
-   - Compute the noise term: \( \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon \).
+   - Compute the noise term:
+     $$
+     \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon
+     $$
    - Subtract this term from the noisy data \( x_t \):
      $$
      x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon
@@ -133,7 +136,7 @@ $$
      $$
      x_0 = \frac{x_t - \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon}{\sqrt{\bar{\alpha}_t}}
      $$
-
+     
 
 **Key Points:**
 
