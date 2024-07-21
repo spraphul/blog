@@ -71,8 +71,9 @@ Training the diffusion model involves optimizing the parameters $\theta$ of the 
 
 This loss function can be expressed as:
 
-$\mathcal{L}(\theta) = \mathbb{E}_{t, x_0, \epsilon} [||\epsilon - \epsilon_\theta(x_t, t)||^2]$
-
+$$
+\mathcal{L}(\theta) = \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\theta(x_t, t)\|^2 \right]
+$$
 where:
 
 * $\epsilon$ represents the actual noise added to the image $x_0$ at timestep $t$.
