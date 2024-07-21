@@ -4,7 +4,7 @@ title: Diffusion Models
 
 ## Diffusion Models: Redefining Generative AI through Controlled Noise
 
-Diffusion models are rapidly emerging as a dominant force in the field of generative artificial intelligence, showcasing an unparalleled ability to synthesize high-quality, diverse images.  Unlike previous generative approaches like Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs), Diffusion Models employ a unique two-stage process that leverages the controlled introduction and removal of noise to learn complex data distributions.
+Diffusion models are rapidly emerging as a dominant force in the field of generative artificial intelligence, showcasing an unparalleled ability to synthesize high-quality, diverse images. Unlike previous generative approaches like Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs), Diffusion Models employ a unique two-stage process that leverages the controlled introduction and removal of noise to learn complex data distributions.
 
 ### The Diffusion Process: A Gradual Descent into Noise
 
@@ -16,11 +16,11 @@ Central to diffusion models is the ability to reverse this noise injection proce
 
 ### Synthesizing New Data: Image Generation from Pure Noise
 
-The image generation process begins with a tensor of pure random noise, representing a blank slate. This noise is passed through the trained U-Net, which, conditioned on the final timestep of the forward process, predicts the noise present. Subtracting this predicted noise initiates the reverse diffusion, moving one step closer to a cleaner image.  This iterative procedure continues, progressively denoising the image at each timestep, until a final, generated image emerges.  The result is a novel image that reflects the learned data distribution, exhibiting remarkable fidelity and diversity.
+The image generation process begins with a tensor of pure random noise, representing a blank slate. This noise is passed through the trained U-Net, which, conditioned on the final timestep of the forward process, predicts the noise present. Subtracting this predicted noise initiates the reverse diffusion, moving one step closer to a cleaner image. This iterative procedure continues, progressively denoising the image at each timestep, until a final, generated image emerges. The result is a novel image that reflects the learned data distribution, exhibiting remarkable fidelity and diversity.
 
-###  Harnessing Text: Conditional Image Generation
+### Harnessing Text: Conditional Image Generation
 
-Beyond unconditional generation, Diffusion Models demonstrate a powerful capacity for **conditional image generation**, guided by textual descriptions.  This involves transforming the textual prompt into a **text embedding** using a language model, typically a transformer-based architecture like CLIP. This embedding encapsulates the semantic meaning of the description, providing the U-Net with contextual information.
+Beyond unconditional generation, Diffusion Models demonstrate a powerful capacity for **conditional image generation**, guided by textual descriptions. This involves transforming the textual prompt into a **text embedding** using a language model, typically a transformer-based architecture like CLIP. This embedding encapsulates the semantic meaning of the description, providing the U-Net with contextual information.
 
 During the denoising process, this text embedding is incorporated to **condition** the U-Net's predictions. The model learns to predict noise patterns that align with the textual description, effectively guiding the generation towards images that correspond to the given prompt. Various techniques, including concatenation, cross-attention, and modulation, can be employed to integrate the text embedding into the U-Net architecture.
 
@@ -28,32 +28,34 @@ During the denoising process, this text embedding is incorporated to **condition
 
 Diffusion Models exhibit several compelling advantages over traditional generative approaches:
 
-* **Exceptional Sample Quality and Diversity:**  Diffusion models have consistently demonstrated the ability to generate images with remarkable fidelity and realism, often surpassing the performance of GANs.  Their ability to learn the nuanced structure of data distributions allows for the generation of diverse samples that accurately reflect the variety within the training data. This is further enhanced by their aptitude for conditional generation, enabling the creation of tailored images guided by textual descriptions.
-* **Robust and Stable Training:**  Compared to the often-challenging training process of GANs, Diffusion Models offer a significantly more stable and predictable training experience. They are less susceptible to issues like mode collapse and vanishing gradients, making them a more accessible and reliable option for researchers and practitioners.
+- **Exceptional Sample Quality and Diversity:** Diffusion models have consistently demonstrated the ability to generate images with remarkable fidelity and realism, often surpassing the performance of GANs. Their ability to learn the nuanced structure of data distributions allows for the generation of diverse samples that accurately reflect the variety within the training data. This is further enhanced by their aptitude for conditional generation, enabling the creation of tailored images guided by textual descriptions.
+- **Robust and Stable Training:** Compared to the often-challenging training process of GANs, Diffusion Models offer a significantly more stable and predictable training experience. They are less susceptible to issues like mode collapse and vanishing gradients, making them a more accessible and reliable option for researchers and practitioners.
 
-While the iterative nature of the sampling process can lead to slower generation speeds compared to VAEs and GANs, the compelling advantages in image quality, diversity, and training stability solidify Diffusion Models as a groundbreaking force in generative AI. With ongoing research exploring new variants and applications, the potential of these models to reshape the landscape of image generation and beyond is truly remarkable. 
+While the iterative nature of the sampling process can lead to slower generation speeds compared to VAEs and GANs, the compelling advantages in image quality, diversity, and training stability solidify Diffusion Models as a groundbreaking force in generative AI. With ongoing research exploring new variants and applications, the potential of these models to reshape the landscape of image generation and beyond is truly remarkable.
 
 ### A Mathematical Symphony: Delving into the Mechanics of Diffusion Models
 
-While the conceptual framework of diffusion models might seem intuitive, their inner workings are underpinned by an elegant mathematical foundation.  To truly appreciate their capabilities, we must embark on a journey into the realm of probability distributions and Markov chains, unraveling the equations that orchestrate the intricate dance between diffusion and denoising.
+While the conceptual framework of diffusion models might seem intuitive, their inner workings are underpinned by an elegant mathematical foundation. To truly appreciate their capabilities, we must embark on a journey into the realm of probability distributions and Markov chains, unraveling the equations that orchestrate the intricate dance between diffusion and denoising.
 
 #### Forward Diffusion: A Stochastic Dance with Noise
 
 The forward diffusion process can be formalized as a Markov chain, a sequence of random variables where each step depends solely on the preceding one. Given an initial data point $x_0$, we iteratively sample noisy versions of the data by adding Gaussian noise according to the following equation:
 
-$$q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I)$$
+$$
+q(x_t \mid x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I)
+$$
 
 where:
 
-* $x_t$ represents the noisy data point at timestep $t$.
-* $x_{t-1}$ is the data point at the previous timestep.
-* $\beta_t$ is the variance schedule parameter at timestep $t$, controlling the noise level.
-* $\mathcal{N}(x_t; \mu, \Sigma)$ denotes the Gaussian distribution with mean $\mu$ and covariance matrix $\Sigma$.
-* $I$ is the identity matrix.
+- $x_t$ represents the noisy data point at timestep $t$.
+- $x_{t-1}$ is the data point at the previous timestep.
+- $\beta_t$ is the variance schedule parameter at timestep $t$, controlling the noise level.
+- $\mathcal{N}(x_t; \mu, \Sigma)$ denotes the Gaussian distribution with mean $\mu$ and covariance matrix $\Sigma$.
+- $I$ is the identity matrix.
 
 This equation essentially states that the noisy data point at time $t$ is sampled from a Gaussian distribution whose mean is a scaled version of the previous data point and whose variance is determined by the variance schedule. As we progress through the timesteps, the influence of the original data point diminishes while the noise component dominates, ultimately leading to a sample $x_T$ that is essentially pure Gaussian noise.
 
-####  The Variance Schedule: A Symphony of Noise Control
+#### The Variance Schedule: A Symphony of Noise Control
 
 The variance schedule $\beta_t$ plays a crucial role in controlling the pace and intensity of the diffusion process. A linear schedule, where $\beta_t$ increases linearly with time, is a common choice, but other schedules, such as cosine or sigmoid, offer more nuanced control over the noise injection.
 
@@ -61,13 +63,13 @@ A key observation is that the sum of Gaussian distributions is itself a Gaussian
 
 #### Reverse Diffusion: Denoising with a Learned Compass
 
-The reverse process, denoising, aims to learn the reverse transition probabilities $p_\theta(x_{t-1} | x_t)$, parameterized by a neural network with parameters $\theta$. This network, typically a U-Net, takes the noisy image $x_t$ and the timestep $t$ as input and outputs a prediction of the noise added at that timestep. 
+The reverse process, denoising, aims to learn the reverse transition probabilities $p_\theta(x_{t-1} \mid x_t)$, parameterized by a neural network with parameters $\theta$. This network, typically a U-Net, takes the noisy image $x_t$ and the timestep $t$ as input and outputs a prediction of the noise added at that timestep.
 
-The reverse process is also modeled as a Markov chain, where each step involves removing the predicted noise from the current image to obtain a less noisy version.  However, unlike the forward process, the variance of the noise in the reverse process is fixed, simplifying the mathematical formulation.
+The reverse process is also modeled as a Markov chain, where each step involves removing the predicted noise from the current image to obtain a less noisy version. However, unlike the forward process, the variance of the noise in the reverse process is fixed, simplifying the mathematical formulation.
 
-####  The Loss Function: Guiding the Denoising Symphony
+#### The Loss Function: Guiding the Denoising Symphony
 
-Training the diffusion model involves optimizing the parameters $\theta$ of the neural network to minimize a specific loss function.  A common choice is a simplified version of the variational lower bound, commonly used in VAEs. This simplified loss function minimizes the L2 distance between the predicted noise and the actual noise added to the image during the forward process at a given timestep.
+Training the diffusion model involves optimizing the parameters $\theta$ of the neural network to minimize a specific loss function. A common choice is a simplified version of the variational lower bound, commonly used in VAEs. This simplified loss function minimizes the L2 distance between the predicted noise and the actual noise added to the image during the forward process at a given timestep.
 
 This loss function can be expressed as:
 
@@ -77,15 +79,15 @@ $$
 
 where:
 
-* $\epsilon$ represents the actual noise added to the image $x_0$ at timestep $t$.
-* $\epsilon_\theta(x_t, t)$ is the noise predicted by the neural network with parameters $\theta$ given the noisy image $x_t$ and timestep $t$.
+- $\epsilon$ represents the actual noise added to the image $x_0$ at timestep $t$.
+- $\epsilon_\theta(x_t, t)$ is the noise predicted by the neural network with parameters $\theta$ given the noisy image $x_t$ and timestep $t$.
 
 By minimizing this loss, the neural network learns to accurately predict the noise at each timestep, effectively reversing the forward diffusion process and enabling the generation of new images.
 
-####  Time Embeddings: Providing Temporal Context
+#### Time Embeddings: Providing Temporal Context
 
 Since the U-Net uses shared parameters across all timesteps, it needs a mechanism to differentiate between the varying noise levels at different stages of the diffusion process. This is achieved through **time embeddings**, where the timestep $t$ is encoded as a continuous vector representation and provided as additional input to the U-Net. This embedding allows the network to adjust its behavior based on the temporal context, ensuring accurate noise prediction at each timestep.
 
-#### The Mathematical Elegance of Diffusion Models
+### The Mathematical Elegance of Diffusion Models
 
-The mathematical framework of diffusion models, built on probability distributions, Markov chains, and neural network optimization, provides a robust and elegant approach to generative modeling. By systematically corrupting and denoising data, these models capture the intricate structure of complex data distributions, enabling the generation of high-quality, diverse samples, and even conditional image generation guided by textual descriptions. The ongoing development of new variants and applications promises to further expand the scope and impact of these remarkable models in the field of artificial intelligence. 
+The mathematical framework of diffusion models, built on probability distributions, Markov chains, and neural network optimization, provides a robust and elegant approach to generative modeling. By systematically corrupting and denoising data, these models capture the intricate structure of complex data distributions, enabling the generation of high-quality, diverse samples, and even conditional image generation guided by textual descriptions. The ongoing development of new variants and applications promises to further expand the scope and impact of these remarkable models in the field of artificial intelligence.
