@@ -197,7 +197,7 @@ But the potential of Diffusion Models extends far beyond image creation! Their p
 **What fascinating advancements might we see in the future?**
 
 * **Multisensory experiences:** Envision AI creating experiences that blend sight, sound, and even touch!
-* **Personalized creations:** Picture AI crafting music that resonates with your mood, artwork that mirrors your style, or medicine tailored specifically to your needs!
+* **Personalized creations:** Picture AI crafting music that resonates with your mood, artwork that mirrors your style!
 
 While Diffusion Models are still in their early stages, their potential is immense! They could transform how we create and experience a wide array of content in the future. 
 
