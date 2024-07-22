@@ -24,31 +24,31 @@ The loss function above consists of two components: the likelihood loss (Lp) and
 
 The likelihood loss (\(L_p\)) is a measure of how well the model is able to generate the tokens in a human-edited summary (\(S_E\)). It is calculated using the negative log likelihood and is defined by the following formula:
 
-\[ L_p(x, t) = - \log(1 - p_{\theta}(x_t | x_{<t}, U)) \]
+$\[ L_p(x, t) = - \log(1 - p_{\theta}(x_t | x_{<t}, U)) \]$
 
-- \(x\): Represents the token sequence.
-- \(t\): Represents the token position.
-- \(p_{\theta}(x_t | x_{<t}, U)\): Is the probability of generating token \(x_t\) given the preceding tokens \(x_{<t}\) and the utterance cluster \(U\).
+- $\(x\): Represents the token sequence.$
+- $\(t\): Represents the token position.$
+- $\(p_{\theta}(x_t | x_{<t}, U)\): Is the probability of generating token \(x_t\) given the preceding tokens \(x_{<t}\) and the utterance cluster \(U\).$
 
-In simpler terms, \(L_p\) penalizes the model when it fails to generate the correct token in the human-edited summary, encouraging the model to improve its likelihood of generating accurate tokens.
+In simpler terms, $\(L_p\)$ penalizes the model when it fails to generate the correct token in the human-edited summary, encouraging the model to improve its likelihood of generating accurate tokens.
 
-### Unlikelihood Loss (\(L_r\))
+### Unlikelihood Loss $(\(L_r\))$
 
-The unlikelihood loss (\(L_r\)) is a measure of how well the model avoids generating tokens that are not present in the human-edited summary (\(S_E\)). It is calculated using the negative log likelihood and is defined by the following formula:
+The unlikelihood loss $(\(L_r\))$ is a measure of how well the model avoids generating tokens that are not present in the human-edited summary $(\(S_E\))$. It is calculated using the negative log likelihood and is defined by the following formula:
 
-\[ L_r(x, t) = - \log p_{\theta}(x_t | x_{<t}, U) \]
+$\[ L_r(x, t) = - \log p_{\theta}(x_t | x_{<t}, U) \]$
 
-- \(x\): Represents the token sequence.
-- \(t\): Represents the token position.
-- \(p_{\theta}(x_t | x_{<t}, U)\): Is the probability of generating token \(x_t\) given the preceding tokens \(x_{<t}\) and the utterance cluster \(U\).
+- $\(x\): Represents the token sequence.$
+- $\(t\): Represents the token position.$
+- $\(p_{\theta}(x_t | x_{<t}, U)\): Is the probability of generating token \(x_t\) given the preceding tokens \(x_{<t}\) and the utterance cluster \(U\).$
 
-In simpler terms, \(L_r\) penalizes the model when it generates tokens that are not part of the human-edited summary, encouraging the model to be more selective and avoid generating irrelevant tokens.
+In simpler terms, $\(L_r\)$ penalizes the model when it generates tokens that are not part of the human-edited summary, encouraging the model to be more selective and avoid generating irrelevant tokens.
 
 ### Additionally
 
-- \(1_{AI-C}\) and \(1_{AI-NC}\) represent tokens that are changed and not changed when aligning \(S_{AI}\) and \(S_E\) sequences.
-- \(1_{E-C}\) and \(1_{E-NC}\) represent tokens that are changed and not changed in \(S_E\).
-- \(w_{AI-C}\), \(w_{AI-NC}\), \(w_{E-C}\), and \(w_{E-NC}\) are loss weights for different token categories.
+- $\(1_{AI-C}\) and \(1_{AI-NC}\) represent tokens that are changed and not changed when aligning \(S_{AI}\) and \(S_E\) sequences.$
+- $\(1_{E-C}\) and \(1_{E-NC}\) represent tokens that are changed and not changed in \(S_E\).$
+- $\(w_{AI-C}\), \(w_{AI-NC}\), \(w_{E-C}\), and \(w_{E-NC}\) are loss weights for different token categories.$
 
 ### Example
 
@@ -72,13 +72,13 @@ In this alignment representation:
 - "D" stands for "Deleted" tokens (Changed)
 - "S" stands for "Substituted" tokens (Changed)
 
-For the word list in \(S_{AI}\) \([patient, takes, one, aspirin, daily]\), the corresponding indicator functions are:
-- \(1_{AI-C}(t) = [0, 1, 1, 0, 1]\)
-- \(1_{AI-NC}(t) = [1, 0, 0, 1, 0]\)
+For the word list in $\(S_{AI}\) \([patient, takes, one, aspirin, daily]\)$, the corresponding indicator functions are:
+- $\(1_{AI-C}(t) = [0, 1, 1, 0, 1]\)$
+- $\(1_{AI-NC}(t) = [1, 0, 0, 1, 0]\)$
 
-For the word list in \(S_E\) \([patient, doesn't, want, to, take, aspirin]\), the corresponding indicator functions are:
-- \(1_{E-C}(t) = [0, 1, 1, 1, 1, 0]\)
-- \(1_{E-NC}(t) = [1, 0, 0, 0, 0, 1]\)
+For the word list in $\(S_E\) \([patient, doesn't, want, to, take, aspirin]\)$, the corresponding indicator functions are:
+- $\(1_{E-C}(t) = [0, 1, 1, 1, 1, 0]\)$
+- $\(1_{E-NC}(t) = [1, 0, 0, 0, 0, 1]\)$
 
 ### Catastrophic Forgetting Issue
 
