@@ -1,5 +1,5 @@
 ---
-title: Building your own Autonomous LLM
+title: Building your own Autonomous LLM Agent
 ---
 
 ##### In this blog, we are going to talk about LLM-based autonomous agents. Unlike the typical LLMs we're accustomed to, which primarily focus on generating textual content, an autonomous LLM agent transcends this by not only producing responses but also by taking informed actions based on them.
@@ -449,10 +449,12 @@ class LLM:
     def generate(self, prompt, **kwargs):
         try:
             result = self.client.chat.completions.create(
-                model=kwargs.get('model_name', 'gpt-4-0125-preview'),
+                model=kwargs.get('model_name',
+'gpt-4-0125-preview'),
                 messages=[
                     {"role": "system", "content":
-                     kwargs.get('sys_prompt', 'You are a helpful AI Assistant.')},
+                     kwargs.get('sys_prompt',
+'You are a helpful AI Assistant.')},
                     {"role": "user", "content": prompt}
                 ],
                 max_tokens=kwargs.get('max_new_tokens', 1000),
@@ -487,8 +489,7 @@ As you complete this task, you're building a plan and keeping
 track of your progress. Here's a JSON representation of your
 plan:
 
-```json
-%(plan)s```
+%(plan)s
 
 %(plan_status)s
 
@@ -528,9 +529,7 @@ as well as observations you've made. This only includes the
 MOST RECENT
 ten actions--more happened before that.
 
-```json
 %(history)s
-```
 
 Your most recent action is at the bottom of that history.
 
@@ -608,9 +607,11 @@ def get_prompt(plan: Plan, history: List[Tuple[Action,
     if current_task is not None:
         plan_status = f"You're currently working on this task:\n{current_task.goal}."
         if len(current_task.subtasks) == 0:
-            plan_status += "\nIf it's not achievable AND verifiable with a SINGLE action, you MUST break it down into subtasks NOW."
+            plan_status += """\nIf it's not achievable AND verifiable with a SINGLE action,
+you MUST break it down into subtasks NOW."""
     else:
-        plan_status = "You're not currently working on any tasks. Your next action MUST be to mark a task as in_progress."
+        plan_status = """You're not currently working on any tasks.
+Your next action MUST be to mark a task as in_progress."""
 
     hint = plan_status
 
@@ -620,9 +621,11 @@ def get_prompt(plan: Plan, history: List[Tuple[Action,
         if latest_action_id == "null":
             hint = "You haven't taken any actions yet."
         elif latest_action_id == "write":
-            hint = "You just changed a file. You should think about how it affects your plan."
+            hint = """You just changed a file.
+You should think about how it affects your plan."""
         elif latest_action_id == "think":
-            hint = "Look at your last thought in the history above. What does it suggest? Don't think anymore--take action."
+            hint = """Look at your last thought in the history above.
+What does it suggest? Don't think anymore--take action."""
         elif latest_action_id == "add_task":
             hint = "You should think about the next action to take."
         elif latest_action_id == "modify_task":
@@ -767,6 +770,7 @@ async def step(i: int, llm: LLM):
             print(f"OBSERVATION: {observation}")
 
         add_history(action, observation)
+```
 
 So the long tutorial comes to an end finally. We can start our blogger agent by calling the function as follows:
 
