@@ -7,6 +7,17 @@ author:
   email: "praphulsingh1996@gmail.com"
   url: ""
 
+plugins:
+  - jekyll-toc
+
+toc:
+  min_level: 1       # Minimum heading level to include in the TOC (e.g., h1)
+  max_level: 6       # Maximum heading level to include in the TOC (e.g., h6)
+  no_toc_section_class: no_toc_section
+  list_number: true  # Enable numbering in the TOC
+  list_class: toc    # Class name for the TOC list
+
+  
 # Build settings
 baseurl: /blog # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
