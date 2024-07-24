@@ -2,6 +2,9 @@
 title: Efficient Book Summarization using Large Language Models
 ---
 
+* TOC
+{:toc}
+
 ![book](https://basmo.app/wp-content/uploads/2021/10/how-to-write-a-book-summary-1.gif)
 
 In the realm of summarizing entire books using Large Language Models (LLMs), the challenge of context length emerges as a prominent hurdle. These models, while powerful, are constrained by their capacity to handle only a certain amount of text at a time. Given the extensive nature of books, accommodating the entire context within the model's limitations becomes a formidable task.
