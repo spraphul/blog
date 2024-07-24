@@ -2,6 +2,9 @@
 title : Being into Quarantine
 ---
 
+* TOC
+{:toc}
+
 When the entire world was shaken by the terror of a pandemic, I got an obvious notification from the 
 CEO of my company stating the mandatory policy of working from home. Now for a guy like me, who just 
 does not know how to work from home, it was a soul shattering news. I was worried more about the gym 
