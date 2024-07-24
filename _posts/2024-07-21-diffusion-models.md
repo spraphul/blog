@@ -1,6 +1,11 @@
 ---
 title: Diffusion Models
 ---
+
+* TOC
+{:toc}
+
+
 ![intro](https://blog.marvik.ai/wp-content/uploads/2023/11/an_intro_to_diffusion_models_img_16.png)
 
 Diffusion models are rapidly emerging as a dominant force in the field of generative artificial intelligence, showcasing an unparalleled ability to synthesize high-quality, diverse images. Unlike previous generative approaches like Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs), Diffusion Models employ a unique two-stage process that leverages the controlled introduction and removal of noise to learn complex data distributions.
