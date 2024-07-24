@@ -2,6 +2,9 @@
 title : Generating Handwritten Sequences Using LSTMs and Mixed Density Networks
 ---
 
+* TOC
+{:toc}
+
 As everyone comes up with a resolution at the start of the year, I would be trying to be more infrequent in my blog postings😀. As it has been over a month, I thought of spilling some words here 😀. In this blog, we will be discussing about an interesting paper on [Generating Sequences With Recurrent Neural Networks](https://arxiv.org/abs/1308.0850) proposed by Alex Graves(DeepMind). I will also be implementing the paper using Tensorflow and Keras. 
 
 #### Problem Definition 
