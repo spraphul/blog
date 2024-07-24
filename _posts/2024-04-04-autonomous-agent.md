@@ -5,7 +5,7 @@ title: Building your own Autonomous LLM Agent
 * TOC
 {:toc}
 
-##### In this blog, we are going to talk about LLM-based autonomous agents. Unlike the typical LLMs we're accustomed to, which primarily focus on generating textual content, an autonomous LLM agent transcends this by not only producing responses but also by taking informed actions based on them.
+In this blog, we are going to talk about LLM-based autonomous agents. Unlike the typical LLMs we're accustomed to, which primarily focus on generating textual content, an autonomous LLM agent transcends this by not only producing responses but also by taking informed actions based on them.
 
 Recently, Cognition Labs released a LLM-based software engineer named Devin. Devin is an LLM-based autonomous agent who can not only answer questions and have conversations with you but also can write codes to files, run them, and deploy them automatically.
 
