@@ -2,6 +2,9 @@
 title: Aligning LLMs using Human Edits
 ---
 
+* TOC
+{:toc}
+
 There has been some cool progress in Aligning Large Language Models to human preferences, and guess what? It has been found that getting feedback from humans makes model-generated text way better. Now, let's talk about a part of this research: Human Edits. I am going to talk about a technique called Sequence Alignment (un)Likelihood Training (SALT), where they mix both what humans say(through edits int the model's response) and what the machine comes up with during training. They also introduce something called Imitation Edits, where they kind of pretend to have human-edited data by using real summaries from existing training data. This trick helps save on needing a ton of human-edited samples. SALT makes summaries better when you mix what changes humans want in them through edits. Although there has already been some work on aligning LLMs like using RLHF(Reinforcement Learning using Human Feedback) and DPO(Direct Preference Optimization), this method takes an alternate approach of using human edits to align the models.
 
 Before we talk about SALT specifically, lets talk briefly about techniques like RLHF and DPO and what changes SALT brings in them.
