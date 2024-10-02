@@ -105,7 +105,7 @@ This paper introduces **CGPO (Constrained Generative Policy Optimization)**, a n
 - Different tasks may have conflicting objectives, leading to compromises in performance when using a linear combination of reward models.
 - A uniform RLHF optimizer setup across all tasks can be suboptimal as different tasks might benefit from different hyperparameter settings.
 
-**CGPO addresses these limitations by incorporating the following key innovations:**
+## CGPO addresses these limitations by incorporating the following key innovations
 
 **1. Mixture of Judges (MoJs):**
 - Instead of relying solely on reward models, CGPO introduces two types of judges: **rule-based** and **LLM-based**.
@@ -122,20 +122,20 @@ This paper introduces **CGPO (Constrained Generative Policy Optimization)**, a n
 - Unlike traditional methods that apply a unified treatment across all tasks, CGPO segregates prompts by task and employs a customized optimization strategy for each.
 - This includes tailored MoJs, reward models, and hyperparameters for the constrained RLHF optimizer, allowing each task to be optimized independently without compromises from conflicting goals.
 
-**Architecture and Implementation:**
+## Architecture and Implementation
 
 - CGPO first separates the prompt set into distinct task categories based on prompt nature (e.g., general chat, math reasoning, safety).
 - For each task, a customized reward model is trained using relevant preference data.
 - During online generation, a task-specific mixture of judges is applied to assess constraint satisfaction for each LLM output.
 - Finally, a tailored constrained RLHF optimizer is used to update the model based on the reward model values and constraint satisfaction labels.
 
-**Experimental Results:**
+## Experimental Results
 
 - CGPO is evaluated on five tasks: **general chat, instruction following, math/code reasoning, engagement intent, and safety**.
 - Using open-source data and the Llama3.0 70b pre-trained model, CGPO consistently outperforms baseline RLHF methods (PPO and DPO) across all tasks and benchmarks.
 - Notably, CGPO effectively prevents reward hacking in coding tasks, where PPO exhibits significant performance degradation, highlighting the crucial role of MoJs.
 
-**Key contributions of the paper:**
+## Key contributions of the paper
 
 - **A novel primal-type constrained RL method** for mitigating reward hacking in multi-task LLM post-tuning.
 - **Introduction of two types of judges** (rule-based and LLM-based) for effective constraint satisfaction evaluation.
