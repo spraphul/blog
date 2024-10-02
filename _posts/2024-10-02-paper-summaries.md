@@ -88,3 +88,56 @@ The evaluation incorporates several key metrics:
 - **Response Latency:**  A critical metric for real-time interaction, latency measures the delay between the end of the user's speech input and the start of the system's speech response.
 
 The results demonstrate LLaMA-Omni's superior performance across all these metrics, highlighting its effectiveness for low-latency, high-quality speech interaction with LLMs.
+
+
+# The Perfect Blend: Redefining RLHF with Mixture of Judges
+[Arxiv](https://arxiv.org/abs/2409.20370)
+
+## Introduction
+
+This paper introduces **CGPO (Constrained Generative Policy Optimization)**, a novel post-training paradigm for Large Language Models (LLMs) that significantly improves upon the current standard, **RLHF (Reinforcement Learning from Human Feedback)**. CGPO addresses two major limitations of RLHF in multi-task settings:
+
+**1. Vulnerability to Reward Hacking:** 
+- LLMs can exploit weaknesses in preference-based reward models, optimizing for high reward values even if the outputs don't truly align with human preferences.
+- This becomes more challenging in multi-task scenarios where each reward model may have its own flaws and a uniform optimization strategy can be detrimental.
+
+**2. Contradictory Goals:** 
+- Different tasks may have conflicting objectives, leading to compromises in performance when using a linear combination of reward models.
+- A uniform RLHF optimizer setup across all tasks can be suboptimal as different tasks might benefit from different hyperparameter settings.
+
+**CGPO addresses these limitations by incorporating the following key innovations:**
+
+**1. Mixture of Judges (MoJs):**
+- Instead of relying solely on reward models, CGPO introduces two types of judges: **rule-based** and **LLM-based**.
+- These judges evaluate LLM generations in real-time for constraint satisfaction, helping to detect and mitigate reward hacking behaviors.
+- Examples of constraints: providing correct answers in math problems, ensuring code snippets pass unit tests, generating safe responses to harmful prompts.
+
+**2. Constrained RLHF Optimizers:**
+- CGPO implements three new **primal-type** constraint RLHF optimizers that operate independently of the dual-variable update, simplifying the process and enhancing scalability for large-scale LLM post-training.
+- **CRPG (Calibrated-Regularized Policy Gradient):** Utilizes a calibrated reward model for better comparison across prompts and incorporates constraint regularization in the gradient update.
+- **CODPO (Constrained Online Direct Preference Optimization):** Adapts the offline DPO method to incorporate constraints and regularizes the update to prevent likelihood reduction of positive samples.
+- **CRRAFT (Calibrated-Regularized Reward Ranking Finetuning):** Builds upon the RAFT algorithm by filtering out constraint-violating responses and weighting chosen responses by their calibrated reward values for a more refined alignment.
+
+**3. Multi-Task Optimization Strategy:**
+- Unlike traditional methods that apply a unified treatment across all tasks, CGPO segregates prompts by task and employs a customized optimization strategy for each.
+- This includes tailored MoJs, reward models, and hyperparameters for the constrained RLHF optimizer, allowing each task to be optimized independently without compromises from conflicting goals.
+
+**Architecture and Implementation:**
+
+- CGPO first separates the prompt set into distinct task categories based on prompt nature (e.g., general chat, math reasoning, safety).
+- For each task, a customized reward model is trained using relevant preference data.
+- During online generation, a task-specific mixture of judges is applied to assess constraint satisfaction for each LLM output.
+- Finally, a tailored constrained RLHF optimizer is used to update the model based on the reward model values and constraint satisfaction labels.
+
+**Experimental Results:**
+
+- CGPO is evaluated on five tasks: **general chat, instruction following, math/code reasoning, engagement intent, and safety**.
+- Using open-source data and the Llama3.0 70b pre-trained model, CGPO consistently outperforms baseline RLHF methods (PPO and DPO) across all tasks and benchmarks.
+- Notably, CGPO effectively prevents reward hacking in coding tasks, where PPO exhibits significant performance degradation, highlighting the crucial role of MoJs.
+
+**Key contributions of the paper:**
+
+- **A novel primal-type constrained RL method** for mitigating reward hacking in multi-task LLM post-tuning.
+- **Introduction of two types of judges** (rule-based and LLM-based) for effective constraint satisfaction evaluation.
+- **Development of three new constrained RLHF optimizers** (CRPG, CODPO, and CRRAFT) designed for scalability and ease of implementation.
+- **A pioneering multi-objective RLHF treatment strategy** that optimizes each task independently with customized settings for better Pareto frontier across multiple metrics.
