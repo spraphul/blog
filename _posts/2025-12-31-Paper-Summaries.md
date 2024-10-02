@@ -12,7 +12,7 @@ Imagine interacting with your favorite language model, not through typing, but t
 
 ## In-Depth Look at the LLaMA-Omni Model Architecture
 
-![Model Architecture](https://huggingface.co/datasets/google/flax-community/resolve/main/llama-omni/model.png)
+![Model Architecture](https://raw.githubusercontent.com/ictnlp/llama-omni/master/images/model.png)
 
 LLaMA-Omni's architecture is carefully designed to facilitate real-time, bi-directional communication between users and LLMs. Let's dissect each module:
 
