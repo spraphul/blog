@@ -4,7 +4,8 @@ title: Paper Summaries
 * TOC
 {:toc}
 
-# LLaMA-Omni: Seamless Speech Interaction with Large Language Models ![Arxiv](https://arxiv.org/abs/2409.06666)
+# LLaMA-Omni: Seamless Speech Interaction with Large Language Models
+![Arxiv](https://arxiv.org/abs/2409.06666)
 
 ## Introduction
 
