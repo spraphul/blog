@@ -105,7 +105,7 @@ This paper introduces **CGPO (Constrained Generative Policy Optimization)**, a n
 - Different tasks may have conflicting objectives, leading to compromises in performance when using a linear combination of reward models.
 - A uniform RLHF optimizer setup across all tasks can be suboptimal as different tasks might benefit from different hyperparameter settings.
 
-## CGPO addresses these limitations by incorporating the following key innovations
+**CGPO addresses these limitations by incorporating the following key innovations**
 
 **1. Mixture of Judges (MoJs):**
 - Instead of relying solely on reward models, CGPO introduces two types of judges: **rule-based** and **LLM-based**.
