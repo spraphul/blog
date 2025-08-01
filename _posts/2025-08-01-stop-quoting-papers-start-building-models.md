@@ -2,6 +2,8 @@
 title : Stop Quoting Papers, Start Building Models
 ---
 
+![head](https://media.licdn.com/dms/image/v2/D5612AQHcQAxJHKkriQ/article-cover_image-shrink_600_2000/B56ZhcynqWHUAU-/0/1753903430578?e=1759363200&v=beta&t=pOK6yth1FkYWT2WNrqJQheCUSHUrHhadr9Jowh1CPLA)
+
 We are in an era where AI breakthroughs happen faster than most people can keep up. A new architecture drops on arXiv every week. You open LinkedIn, and someone’s already posting hot takes about the latest fine-tuning technique or debating whether LoRA is still relevant. Everyone’s got an opinion. Everyone sounds like an expert.
 
 It’s easy, dangerously easy to fall into the trap of thinking that reading enough papers and knowing the lingo is enough to make you valuable in the AI space. Say the right buzzwords, reference the right models, criticize the right baselines, and you’re in.
