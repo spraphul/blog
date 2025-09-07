@@ -1,5 +1,5 @@
 ---
-title: Bending Time: How Mind and Moment Shape Our Days
+title: Walking With Time Instead of Chasing It
 ---
 
 ![and](https://cff2.earth.com/uploads/2024/02/04093003/Brain-time-scaled.jpg)
