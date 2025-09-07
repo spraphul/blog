@@ -9,7 +9,7 @@ Our brains do not count seconds the way a clock does. Instead, they build a pict
 
 When we are in danger or in pain, the brain becomes very alert. It takes in more details, more signals, more memories. This makes each moment feel heavier and longer. That is why a short fall, a loud noise, or a scary event can feel like it lasted much longer than it really did.
 
-When we are happy, calm, or deeply focused, the brain does the opposite. It takes in fewer signals because it is absorbed in the moment. This is why time seems to fly when we are with people we love, or when we are doing something creative, or when we are in what psychologists call a flow state.
+When we are happy, calm, or deeply focused, the brain does the opposite. It takes in fewer signals because it is absorbed in the moment. This is why time seems to fly when we are with people we love, or when we are doing something creative, or when we are in a flow state.
 
 Our sense of time is flexible. It bends with our state of mind. What this means is that while clocks tell us how much time passes, our brains decide how long that time feels.
 
