@@ -1,6 +1,8 @@
 ---
 title: Why "Be Desirable" Is the Best Career and Life Advice You’ll Ever Get
 ---
+![abd](https://github.com/spraphul/blog/blob/gh-pages/_posts/desirable.png?raw=true)
+
 I remember a time when the atmosphere at work felt heavy. Rumors of layoffs floated through every hallway and even casual conversations carried a quiet tension. Out of curiosity and maybe a bit of nervousness, I asked my manager what he thought about everything that was happening.
 
 He didn’t answer right away. He paused, thought for a moment, and then said something that stayed with me far longer than I expected.
