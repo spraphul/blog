@@ -14,7 +14,7 @@ Agents need a version of this.
 
 Not literal dreams, of course. What they need is an offline process that reviews completed work, studies traces and outcomes, identifies what changed, and updates future behavior only when the lesson is grounded, scoped, and validated. I like to think of this as **agent dreaming**: the background consolidation loop that turns raw experience into reliable memory.
 
-![Agent dreaming architecture]({{ site.baseurl }}/img/agent-dreaming-architecture.png)
+![Agent dreaming architecture]({{ site.baseurl }}/img/agent-dreaming-pipeline.png)
 
 ## The Problem With Naive Agent Memory
 
