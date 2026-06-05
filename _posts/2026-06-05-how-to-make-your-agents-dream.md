@@ -16,8 +16,6 @@ Not literal dreams, of course. What they need is an offline process that reviews
 
 ![Agent dreaming architecture]({{ site.baseurl }}/img/agent-dreaming-placeholder.png)
 
-_Image placeholder: replace `/img/agent-dreaming-placeholder.png` with the final architecture diagram._
-
 ## The Problem With Naive Agent Memory
 
 The simplest way to give an agent memory is to append a new note after every interaction. If a user corrects the agent, save the correction. If a tool call fails, save the failure. If a workflow succeeds, save the strategy. Over time, the agent accumulates a long list of lessons that can be retrieved during future runs.
@@ -128,9 +126,6 @@ Fourth, an offline consolidation job selects a memory region, builds an evidence
 
 Fifth, the memory store promotes only validated replacements into active guidance. The old region is superseded, control records capture lifecycle decisions, and the search index is refreshed.
 
-![Agent dreaming pipeline]({{ site.baseurl }}/img/agent-dreaming-pipeline.png)
-
-_Image placeholder: replace `/img/agent-dreaming-pipeline.png` with a final rendered architecture diagram._
 
 ## The Agent Should Sleep on It
 
