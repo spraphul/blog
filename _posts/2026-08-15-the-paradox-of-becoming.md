@@ -3,11 +3,10 @@ layout: post
 title: "The Paradox of Becoming"
 date: 2026-08-15 21:57:00 -0700
 description: "Maybe maturity is not about resolving our contradictions, but learning which parts of ourselves should lead in different moments."
-image: /img/paradoxical.png
 categories: [life, reflection]
 tags: [self-improvement, ambition, relationships, discipline, identity, optimization]
 ---
-
+![The Paradox of Becoming]({{ site.baseurl }}/img/paradoxical.png)
 I have spent a good part of my life trying to optimize things. Work can be optimized, code can be optimized, models can be optimized. You define an objective, measure where you are, understand the error, and iterate.
 
 Somewhere along the way, perhaps without realizing it, I started applying the same philosophy to myself: be more disciplined, think more rationally, become independent, work harder, remove distractions, make better decisions and keep moving.
