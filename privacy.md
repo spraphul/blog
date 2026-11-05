@@ -2,6 +2,7 @@
 layout: page
 title: Privacy
 permalink: /privacy/
+nav_exclude: true
 ---
 
 # Privacy
